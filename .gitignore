@@ -1,0 +1,22 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Material fuente y utilidades locales
+*.docx
+docx_dump*
+dump_docx.py
+dump2.py
+clean.py
+
+# Copias antiguas de los tests (la versión publicada está en quizzes/)
+/quiz-seo-*.html
+
+# Temporales
+*.tmp
+*.log
