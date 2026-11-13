@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 1 · SEO básico en una web estática | IFCD0210</title>
+  <meta name="description" content="Actividad guiada para crear la web estática de TecnoSerprofes y aplicar SEO básico: HTML semántico, metadatos, canonical, URLs amigables, robots.txt, sitemap, 404, HTTPS, Open Graph, GitHub Pages y Search Console.">
+  <meta name="theme-color" content="#0891b2">
+  <link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra-superior">
+    <div class="contenedor barra-inner">
+      <a class="marca" href="../index.html">
+        <span class="marca-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+        </span>
+        <span class="marca-texto">
+          <small>IFCD0210 · Actividad 1</small>
+          Actividades SEO
+        </span>
+      </a>
+
+      <nav class="nav-superior" aria-label="Navegación de la actividad">
+        <a href="../index.html">Actividades</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#trazabilidad">Trazabilidad</a>
+        <a href="#entrega">Entrega</a>
+        <button class="boton boton-suave" type="button" data-imprimir>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8" rx="1"></rect>
+          </svg>
+          Imprimir / PDF
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="contenedor">
+      <nav class="migas" aria-label="Migas de pan">
+        <a href="../index.html">Actividades</a>
+        <span aria-hidden="true">/</span>
+        <span>Actividad 1</span>
+      </nav>
+
+      <section class="hero">
+        <p class="ceja">Actividad 1 · Nivel inicial</p>
+        <h1>Desarrollo y optimización SEO de una web estática</h1>
+        <p class="intro">
+          Vas a crear desde cero la web corporativa de <strong>TecnoSerprofes</strong>, una empresa ficticia de reparación
+          informática en Toledo, y aplicarás el SEO básico: estructura semántica, metadatos, URLs amigables, canonical,
+          <code>robots.txt</code>, <code>sitemap.xml</code>, página 404, Open Graph y publicación con GitHub Pages.
+        </p>
+
+        <ul class="chips">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+            </svg>
+            4-6 horas
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path>
+            </svg>
+            HTML + CSS
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 13v8"></path><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="m8 17 4-4 4 4"></path>
+            </svg>
+            GitHub Pages
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path>
+            </svg>
+            Search Console
+          </li>
+        </ul>
+
+        <div class="hero-datos">
+          <div class="dato">
+            <strong>Individual</strong>
+            <span>Modalidad</span>
+          </div>
+          <div class="dato">
+            <strong>15 pasos</strong>
+            <span>Recorrido</span>
+          </div>
+          <div class="dato">
+            <strong>Web publicada</strong>
+            <span>Entregable</span>
+          </div>
+          <div class="dato">
+            <strong>20 preguntas</strong>
+            <span>Test asociado</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="layout">
+        <aside class="indice" aria-label="Índice de la actividad">
+          <p class="indice-titulo">Contenido</p>
+          <ol>
+            <li><a href="#antes">Antes de empezar</a></li>
+            <li><a href="#paso-1">Crear el proyecto</a></li>
+            <li><a href="#paso-2">HTML semántico y metadatos</a></li>
+            <li><a href="#paso-3">Página de servicios</a></li>
+            <li><a href="#paso-4">Página de contacto</a></li>
+            <li><a href="#paso-5">Imágenes y atributo alt</a></li>
+            <li><a href="#paso-6">Estilos y móvil</a></li>
+            <li><a href="#paso-7">URLs amigables y canonical</a></li>
+            <li><a href="#paso-8">robots.txt y noindex</a></li>
+            <li><a href="#paso-9">sitemap.xml</a></li>
+            <li><a href="#paso-10">Página 404</a></li>
+            <li><a href="#paso-11">HTTPS y 301</a></li>
+            <li><a href="#paso-12">Open Graph</a></li>
+            <li><a href="#paso-13">Publicar en GitHub Pages</a></li>
+            <li><a href="#paso-14">Google Search Console</a></li>
+            <li><a href="#paso-15">Lighthouse y PageSpeed</a></li>
+          </ol>
+          <div class="indice-extra">
+            <a href="#checklist">Checklist de entrega</a>
+            <a href="#trazabilidad">Trazabilidad con el test</a>
+            <a href="#autoevaluacion">Autoevaluación</a>
+            <a href="#entrega">Rúbrica</a>
+          </div>
+        </aside>
+
+        <div class="contenido">
+          <section id="antes">
+            <h2>Antes de empezar</h2>
+            <p>
+              Esta actividad no es un tutorial para copiar y pegar. Cada paso explica <strong>qué</strong> haces,
+              <strong>por qué</strong> importa para el SEO y <strong>cómo comprobar</strong> que está bien.
+              Al final entregarás una web real publicada y un conjunto de evidencias.
+            </p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                Objetivos de aprendizaje
+              </p>
+              <ul>
+                <li>Crear una web estática de tres páginas con HTML5 semántico y CSS.</li>
+                <li>Configurar los elementos de SEO on page: <code>title</code>, meta description, encabezados y <code>alt</code>.</li>
+                <li>Entender y aplicar URLs amigables, <code>canonical</code>, <code>noindex</code> y redirecciones 301.</li>
+                <li>Crear <code>robots.txt</code>, <code>sitemap.xml</code> y una página 404 correcta.</li>
+                <li>Publicar con GitHub Pages y verificar el sitio en Google Search Console.</li>
+                <li>Medir el resultado con Lighthouse o PageSpeed Insights.</li>
+              </ul>
+            </div>
+
+            <h3>Qué necesitas</h3>
+            <ul>
+              <li><strong>Visual Studio Code</strong> con la extensión <em>Live Server</em>.</li>
+              <li>Una cuenta de <strong>GitHub</strong> (gratuita) para publicar con GitHub Pages.</li>
+              <li>Una cuenta de <strong>Google</strong> para usar Search Console.</li>
+              <li>Un navegador con DevTools: Chrome, Edge o Firefox.</li>
+              <li>Una imagen con licencia libre relacionada con la informática. Puedes usar Unsplash, Pexels o Pixabay.</li>
+            </ul>
+
+            <h3>La empresa ficticia</h3>
+            <p>
+              Durante las tres actividades trabajarás con la misma marca: <strong>TecnoSerprofes</strong>, un servicio
+              técnico de reparación y mantenimiento informático situado en <strong>Toledo</strong>. Mantener la misma
+              marca y ubicación te permite comparar resultados entre actividades y evitar contenido duplicado.
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 9v4"></path><path d="M12 17h.01"></path><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"></path>
+                </svg>
+                Errores frecuentes al empezar
+              </p>
+              <ul>
+                <li>Usar mayúsculas, espacios o tildes en nombres de archivo y carpetas. Rompe enlaces en servidores Linux.</li>
+                <li>Guardar las imágenes en el escritorio y no dentro de <code>img/</code>.</li>
+                <li>Copiar el mismo <code>title</code> en las tres páginas.</li>
+                <li>Confundir la dirección local (<code>file:///</code>) con la dirección publicada.</li>
+              </ul>
+            </div>
+
+            <h3>Convenciones del proyecto</h3>
+            <div class="tabla">
+              <table>
+                <caption>Nombres y rutas que usaremos en toda la actividad</caption>
+                <thead>
+                  <tr><th>Elemento</th><th>Convención</th><th>Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Archivos HTML</td><td>Minúsculas, sin espacios ni tildes</td><td><code>servicios.html</code></td></tr>
+                  <tr><td>Carpetas</td><td>Minúsculas y en singular</td><td><code>css/</code>, <code>img/</code></td></tr>
+                  <tr><td>Imágenes</td><td>Minúsculas, guiones y formato WebP</td><td><code>reparacion-ordenador.webp</code></td></tr>
+                  <tr><td>Enlaces internos</td><td>Rutas relativas</td><td><code>servicios.html</code></td></tr>
+                  <tr><td>URL publicada</td><td>Siempre con HTTPS y barra final en la raíz</td><td><code>https://usuario.github.io/</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Cómo usar esta página</p>
+              <p>
+                Marca las casillas de la <a href="#checklist">checklist final</a> a medida que avanzas: el progreso se
+                guarda en tu navegador. Los bloques de código tienen un botón <strong>Copiar</strong>. Si necesitas
+                entregar la práctica impresa, usa <strong>Imprimir / PDF</strong>.
+              </p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-1">
+            <h2><span class="num">01</span> Crear la estructura del proyecto</h2>
+            <p class="subtitulo">Un proyecto ordenado evita enlaces roscos y facilita el despliegue.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Tener creada la carpeta del proyecto con las tres páginas, la hoja de estilos y la carpeta de imágenes.</p>
+            </div>
+
+            <p>Abre Visual Studio Code, crea una carpeta llamada <code>tecno-serprofes</code> y dentro esta estructura:</p>
+
+            <div class="codigo" data-lenguaje="Estructura">
+<pre><code>tecno-serprofes/
+├── index.html
+├── servicios.html
+├── contacto.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── css/
+│   └── estilos.css
+└── img/
+    └── reparacion-ordenador.webp</code></pre>
+            </div>
+
+            <p>
+              Los archivos <code>404.html</code>, <code>robots.txt</code> y <code>sitemap.xml</code> los crearás más
+              adelante. Ahora basta con las tres páginas, <code>css/</code> e <code>img/</code>.
+            </p>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <p>
+                En el explorador de VS Code deben verse exactamente esos nombres, en minúsculas. Si tu sistema oculta
+                las extensiones, actívalas en el explorador de Windows para no crear <code>index.html.txt</code>.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del árbol de archivos del proyecto en VS Code.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-2">
+            <h2><span class="num">02</span> Construir la página principal con HTML semántico</h2>
+            <p class="subtitulo">La estructura del documento es la base sobre la que se apoya todo el SEO on page.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear <code>index.html</code> con etiquetas semánticas, un <code>title</code> único, una meta description propia y una jerarquía de encabezados correcta.</p>
+            </div>
+
+            <h3>¿Estática o dinámica?</h3>
+            <p>
+              Una página <strong>estática</strong> se sirve tal como está guardada: el HTML, el CSS y el JavaScript no se
+              generan en cada petición. Una página <strong>dinámica</strong> se construye en el servidor (por ejemplo, con
+              PHP y una base de datos) cada vez que alguien la visita.
+            </p>
+            <p>
+              Para el SEO, la ventaja de lo estático es que <strong>el contenido ya está en el HTML inicial</strong>: el
+              rastreador no depende de ejecutar JavaScript y la página suele cargar más rápido. Aun así, sigue siendo
+              necesario trabajar las palabras clave, los metadatos, los enlaces y la publicación.
+            </p>
+
+            <h3>Escribe el documento</h3>
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Reparación de ordenadores en Toledo | TecnoSerprofes&lt;/title&gt;
+  &lt;meta name="description" content="Servicio técnico y reparación de ordenadores en Toledo. Mantenimiento informático y asistencia para particulares y empresas."&gt;
+  &lt;link rel="stylesheet" href="css/estilos.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;a href="index.html"&gt;TecnoSerprofes&lt;/a&gt;
+    &lt;nav aria-label="Navegación principal"&gt;
+      &lt;a href="index.html"&gt;Inicio&lt;/a&gt;
+      &lt;a href="servicios.html"&gt;Servicios&lt;/a&gt;
+      &lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h1&gt;Reparación de ordenadores en Toledo&lt;/h1&gt;
+      &lt;p&gt;
+        En TecnoSerprofes ofrecemos servicios de reparación y mantenimiento
+        informático para particulares y empresas.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Nuestro objetivo es ayudarte a mantener tus equipos informáticos
+        en perfecto estado.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+      &lt;h2&gt;¿Qué servicios ofrecemos?&lt;/h2&gt;
+      &lt;p&gt;
+        Realizamos reparaciones de ordenadores, mantenimiento de equipos
+        y asistencia técnica.
+      &lt;/p&gt;
+      &lt;a href="servicios.html"&gt;Consulta nuestros servicios de reparación&lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;© 2026 TecnoSerprofes · Toledo&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>Qué hace cada elemento</h3>
+            <div class="tabla">
+              <table>
+                <caption>Elementos SEO del documento HTML</caption>
+                <thead>
+                  <tr><th>Elemento</th><th>Función SEO</th><th>Dónde va</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><code>lang="es"</code></td><td>Indica el idioma del contenido a navegadores y buscadores.</td><td>Etiqueta <code>&lt;html&gt;</code></td></tr>
+                  <tr><td><code>&lt;title&gt;</code></td><td>Título de la pestaña y, normalmente, enlace en la SERP. Debe ser único, descriptivo y contener la keyword principal.</td><td><code>&lt;head&gt;</code></td></tr>
+                  <tr><td><code>meta description</code></td><td>Resumen de la página. No es un factor de ranking directo, pero influye en el CTR y Google puede reescribirla.</td><td><code>&lt;head&gt;</code></td></tr>
+                  <tr><td><code>viewport</code></td><td>Adapta la página al ancho del dispositivo. Base del diseño responsive.</td><td><code>&lt;head&gt;</code></td></tr>
+                  <tr><td><code>&lt;h1&gt;</code></td><td>Título principal. Conviene uno por página, que resuma el tema.</td><td>Contenido</td></tr>
+                  <tr><td><code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code></td><td>Estructuran las secciones y subsecciones sin saltarse niveles.</td><td>Contenido</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Cuidado con los encabezados</p>
+              <p>
+                No uses los encabezados para cambiar el tamaño del texto: para eso está CSS. Tampoco pongas varios
+                <code>h1</code> ni saltes de <code>h2</code> a <code>h4</code>. La jerarquía debe reflejar la estructura
+                real del contenido.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>Abre la página con Live Server, no con doble clic sobre el archivo.</li>
+                <li>En DevTools → <em>Elements</em>, confirma que el <code>title</code> y la meta description están dentro de <code>&lt;head&gt;</code>.</li>
+                <li>La pestaña del navegador muestra el título completo.</li>
+                <li>Solo hay un <code>h1</code> y los <code>h2</code> cuelgan de él.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del <code>&lt;head&gt;</code> en DevTools y captura de la pestaña con el título.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-3">
+            <h2><span class="num">03</span> Crear la página de servicios</h2>
+            <p class="subtitulo">Cada página debe tener su propio título, su propia descripción y su propia intención.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear <code>servicios.html</code> con metadatos propios, tres apartados <code>h2</code> y enlaces internos descriptivos.</p>
+            </div>
+
+            <p>
+              Copia la estructura de <code>index.html</code>, cambia el contenido y sustituye el <code>title</code> y la
+              meta description. No reutilices los de la portada: si dos páginas comparten título, compiten entre sí y
+              empeoran la relevancia de ambas.
+            </p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;title&gt;Reparación y mantenimiento informático en Toledo | TecnoSerprofes&lt;/title&gt;
+&lt;meta name="description" content="Descubre nuestros servicios de reparación de ordenadores, mantenimiento informático y asistencia técnica en Toledo."&gt;</code></pre>
+            </div>
+
+            <p>El contenido debe incluir:</p>
+            <ul>
+              <li>Un <code>h1</code> que resuma la página: <em>Servicios de reparación informática en Toledo</em>.</li>
+              <li>Tres apartados <code>h2</code>: reparación de ordenadores, mantenimiento preventivo y asistencia a empresas.</li>
+              <li>Un párrafo explicativo en cada apartado, con lenguaje natural.</li>
+              <li>Un enlace a <code>contacto.html</code> y otro de vuelta a <code>index.html</code>.</li>
+            </ul>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;main&gt;
+  &lt;h1&gt;Servicios de reparación informática en Toledo&lt;/h1&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Reparación de ordenadores y portátiles&lt;/h2&gt;
+    &lt;p&gt;
+      Diagnosticamos y reparamos averías de hardware y software,
+      sustituimos componentes y recuperamos equipos que han dejado de arrancar.
+    &lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Mantenimiento preventivo&lt;/h2&gt;
+    &lt;p&gt;
+      Limpieza interna, actualización de software y revisión de discos
+      para alargar la vida útil de tus equipos.
+    &lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Asistencia técnica para empresas&lt;/h2&gt;
+    &lt;p&gt;
+      Soporte informático y mantenimiento de equipos para pequeños
+      negocios y oficinas de Toledo.
+    &lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;p&gt;
+    &lt;a href="contacto.html"&gt;Solicita información sobre nuestros servicios&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/main&gt;</code></pre>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Texto de enlace</p>
+              <p>
+                Evita <em>«Pincha aquí»</em> o <em>«Más información»</em>. El texto del enlace debe describir la página
+                de destino: <em>«Solicita información sobre nuestros servicios»</em> aporta contexto al usuario y al
+                buscador.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>El <code>title</code> de <code>servicios.html</code> es distinto del de <code>index.html</code>.</li>
+                <li>La meta description también es distinta.</li>
+                <li>Hay un solo <code>h1</code> y tres <code>h2</code>.</li>
+                <li>Los enlaces internos funcionan y usan rutas relativas.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la página publicada o local y del <code>&lt;head&gt;</code> con sus metadatos.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-4">
+            <h2><span class="num">04</span> Crear la página de contacto</h2>
+            <p class="subtitulo">La página de contacto también se posiciona: no la dejes sin metadatos.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear <code>contacto.html</code> con información ficticia coherente, metadatos propios y navegación completa.</p>
+            </div>
+
+            <p>Incluye:</p>
+            <ul>
+              <li>Un <code>title</code> como <em>Contactar con TecnoSerprofes | Reparación informática en Toledo</em>.</li>
+              <li>Una meta description que invite a contactar y mencione la ubicación.</li>
+              <li>Un <code>h1</code> y, si añades horarios o dirección, un <code>h2</code> para cada bloque.</li>
+              <li>Dirección, teléfono y correo <strong>ficticios</strong> pero verosímiles.</li>
+              <li>Enlaces a inicio y servicios.</li>
+            </ul>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;h1&gt;Contacta con TecnoSerprofes&lt;/h1&gt;
+&lt;p&gt;
+  Estamos en el centro de Toledo. Llámanos o escríbenos y te
+  responderemos en horario de oficina.
+&lt;/p&gt;
+
+&lt;h2&gt;Dónde estamos&lt;/h2&gt;
+&lt;address&gt;
+  Calle del Taller, 12 · 45001 Toledo&lt;br&gt;
+  Teléfono: 925 000 000&lt;br&gt;
+  Correo: info@tecnoserprofes.example
+&lt;/address&gt;
+
+&lt;h2&gt;Horario de atención&lt;/h2&gt;
+&lt;p&gt;De lunes a viernes, de 9:00 a 18:00.&lt;/p&gt;</code></pre>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Datos ficticios</p>
+              <p>
+                Usa el dominio reservado <code>.example</code> para el correo y un teléfono inventado. No publiques
+                datos personales reales ni direcciones de terceros.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <p>
+                Las tres páginas se enlazan entre sí sin callejones sin salida: desde cualquier página puedes volver al
+                inicio en un clic.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la página de contacto y de su <code>title</code> en la pestaña.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-5">
+            <h2><span class="num">05</span> Incorporar imágenes optimizadas</h2>
+            <p class="subtitulo">El nombre del archivo y el atributo <code>alt</code> aportan contexto; el peso, velocidad.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Añadir una imagen informativa a la portada con nombre descriptivo, formato moderno, dimensiones declaradas y un <code>alt</code> útil.</p>
+            </div>
+
+            <h3>Prepara el archivo</h3>
+            <ol>
+              <li>Descarga una imagen relacionada con la reparación de ordenadores.</li>
+              <li>Redimensiónala al tamaño real de uso (por ejemplo, 1200 px de ancho).</li>
+              <li>Conviértela a WebP si es posible.</li>
+              <li>Guárdala en <code>img/</code> con un nombre descriptivo: <code>reparacion-ordenador.webp</code>.</li>
+            </ol>
+
+            <p>
+              Evita nombres como <code>IMG_20261113_001.jpg</code> o <code>foto final (1).JPG</code>: no aportan
+              información, usan mayúsculas y espacios, y algunos servidores los tratan de forma distinta.
+            </p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;img
+  src="img/reparacion-ordenador.webp"
+  alt="Técnico reparando la placa base de un ordenador de sobremesa"
+  width="1200"
+  height="800"
+  loading="lazy"
+&gt;</code></pre>
+            </div>
+
+            <p>
+              El atributo <code>alt</code> describe la imagen a quien usa un lector de pantalla y aporta contexto a los
+              buscadores. Debe ser específico y natural, no una lista de palabras clave. <code>width</code> y
+              <code>height</code> reservan el espacio y evitan saltos de diseño (CLS).
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Alt vacío, pero solo cuando toca</p>
+              <p>
+                Si una imagen es puramente decorativa, usa <code>alt=""</code>. Si es informativa, descríbela. Lo que no
+                debe hacerse nunca es repetir la misma ristra de keywords en todas las imágenes.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>La imagen se ve en la página y la ruta es relativa (<code>img/...</code>).</li>
+                <li>El nombre del archivo está en minúsculas y con guiones.</li>
+                <li>En DevTools, la imagen tiene <code>alt</code>, <code>width</code> y <code>height</code>.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del código de la imagen y del archivo dentro de la carpeta <code>img/</code>.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-6">
+            <h2><span class="num">06</span> Dar estilo y comprobar en móvil</h2>
+            <p class="subtitulo">Una web que no se lee en el móvil pierde usuarios y posiciones.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Aplicar una hoja de estilos común y verificar que las tres páginas se adaptan a pantallas pequeñas.</p>
+            </div>
+
+            <div class="codigo" data-lenguaje="CSS">
+<pre><code>* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #292524;
+}
+
+header {
+  background: #173b63;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 .5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 62rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background: #f5f5f4;
+  padding: 1.25rem;
+  text-align: center;
+}</code></pre>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ol>
+                <li>Abre DevTools y activa el modo dispositivo (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>).</li>
+                <li>Prueba al menos con 360 px y 768 px de ancho.</li>
+                <li>No debe aparecer scroll horizontal.</li>
+                <li>El texto debe poder leerse sin hacer zoom.</li>
+              </ol>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la portada en vista móvil desde DevTools.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-7">
+            <h2><span class="num">07</span> URLs amigables y etiqueta canonical</h2>
+            <p class="subtitulo">Una misma página puede respondernos en varias direcciones. Hay que decir cuál es la buena.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Entender qué hace amigable a una URL, comprobar las variantes que genera GitHub Pages y declarar la URL preferida con <code>canonical</code>.</p>
+            </div>
+
+            <h3>Qué es una URL amigable</h3>
+            <p>
+              Una URL amigable es corta, descriptiva y legible: minúsculas, palabras separadas por guiones y sin
+              parámetros innecesarios. Comunica el contenido antes de hacer clic y facilita el trabajo de los buscadores.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Comparación de URLs</caption>
+                <thead>
+                  <tr><th>URL</th><th>Valoración</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><code>/servicios/diseno-web/</code></td><td>Amigable: descriptiva, en minúsculas y sin parámetros.</td></tr>
+                  <tr><td><code>/pagina.php?id=27&amp;cat=3</code></td><td>Poco amigable: depende de identificadores.</td></tr>
+                  <tr><td><code>/Servicios/Diseño Web.html</code></td><td>Problemática: mayúsculas, espacio y tilde.</td></tr>
+                  <tr><td><code>/p?=diseno_web_2026</code></td><td>Confusa: parámetro sin estructura de carpetas.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>El archivo que se sirve en un directorio</h3>
+            <p>
+              Los servidores web buscan un archivo de índice por defecto al acceder a una carpeta. Normalmente es
+              <code>index.html</code>. Por eso una URL limpia como <code>/servicios/</code> puede servir
+              <code>/servicios/index.html</code> sin mostrar el nombre del archivo.
+            </p>
+
+            <div class="caja caja-ampliacion">
+              <p class="caja-titulo">Ampliación: pasar de archivo a carpeta</p>
+              <p>
+                En este proyecto hemos usado <code>servicios.html</code> por sencillez. En un sitio real conviene
+                <code>servicios/index.html</code> para obtener <code>/servicios/</code>. Si lo haces, recuerda:
+              </p>
+              <ul>
+                <li>Cambiar los enlaces a <code>servicios/</code> y <code>contacto/</code>.</li>
+                <li>Ajustar las rutas relativas dentro de la subcarpeta (<code>../css/estilos.css</code>, <code>../index.html</code>).</li>
+                <li>Actualizar <code>canonical</code> y <code>sitemap.xml</code> con la URL final.</li>
+                <li>No mantener las dos versiones: generarías contenido duplicado.</li>
+              </ul>
+            </div>
+
+            <h3>Declarar la URL preferida</h3>
+            <p>
+              GitHub Pages responde tanto en <code>https://usuario.github.io/</code> como en
+              <code>https://usuario.github.io/index.html</code>. Son la misma página con dos direcciones. La etiqueta
+              <code>canonical</code> indica cuál debe considerarse principal cuando hay contenido duplicado.
+            </p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;!-- En la portada --&gt;
+&lt;link rel="canonical" href="https://usuario.github.io/"&gt;
+
+&lt;!-- En servicios.html --&gt;
+&lt;link rel="canonical" href="https://usuario.github.io/servicios.html"&gt;
+
+&lt;!-- En contacto.html --&gt;
+&lt;link rel="canonical" href="https://usuario.github.io/contacto.html"&gt;</code></pre>
+            </div>
+
+            <ul>
+              <li>Usa siempre <strong>URL absolutas</strong>, con <code>https</code> y el dominio completo.</li>
+              <li>Cada página apunta a sí misma, no a la portada.</li>
+              <li>No encadenes canonical: una canonical no debe apuntar a otra canonical.</li>
+              <li>La URL del canonical debe coincidir con la del <code>sitemap.xml</code>.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Canonical no es una redirección</p>
+              <p>
+                <code>canonical</code> es una sugerencia de consolidación: Google puede ignorarla si detecta señales
+                contradictorias. Para mover una URL de forma permanente se usa una redirección 301, que veremos en el
+                paso 11.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>Las tres páginas tienen un <code>canonical</code> distinto y absoluto.</li>
+                <li>Abre <code>https://usuario.github.io/index.html</code>: debe seguir funcionando, pero el canonical apunta a la raíz.</li>
+                <li>En DevTools → <em>Elements</em>, el canonical está dentro de <code>&lt;head&gt;</code>.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del <code>canonical</code> de las tres páginas.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-8">
+            <h2><span class="num">08</span> Crear robots.txt y entender noindex</h2>
+            <p class="subtitulo">Rastrear e indexar son cosas distintas. No las confundas.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear un <code>robots.txt</code> válido, comprobar que se publica y diferenciar sus instrucciones de la directiva <code>noindex</code>.</p>
+            </div>
+
+            <p>En la raíz del proyecto crea <code>robots.txt</code>:</p>
+
+            <div class="codigo" data-lenguaje="robots.txt">
+<pre><code>User-agent: *
+Allow: /
+
+Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
+            </div>
+
+            <div class="tabla">
+              <table>
+                <caption>Directivas básicas de robots.txt</caption>
+                <thead>
+                  <tr><th>Directiva</th><th>Qué hace</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><code>User-agent</code></td><td>Identifica a los robots a los que se aplican las instrucciones. <code>*</code> significa todos.</td></tr>
+                  <tr><td><code>Allow</code></td><td>Permite el rastreo de una ruta.</td></tr>
+                  <tr><td><code>Disallow</code></td><td>Pide a los rastreadores que no accedan a una ruta.</td></tr>
+                  <tr><td><code>Sitemap</code></td><td>Indica la dirección del sitemap.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Qué pasa si bloqueas algo</h3>
+            <div class="codigo" data-lenguaje="robots.txt">
+<pre><code>User-agent: *
+Disallow: /borradores/
+Disallow: /admin/
+
+Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">robots.txt no borra del índice</p>
+              <p>
+                <code>robots.txt</code> da instrucciones de <strong>rastreo</strong>. Si quieres que una página no
+                aparezca en los resultados, usa <code>noindex</code> en su HTML. Y cuidado: si bloqueas la URL en
+                <code>robots.txt</code>, el robot puede no llegar a leer el <code>noindex</code>.
+              </p>
+            </div>
+
+            <h3>La directiva noindex</h3>
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;!-- Pide no incluir esta página en el índice --&gt;
+&lt;meta name="robots" content="noindex, follow"&gt;</code></pre>
+            </div>
+
+            <div class="tabla">
+              <table>
+                <caption>Diferencias entre noindex y robots.txt</caption>
+                <thead>
+                  <tr><th>Aspecto</th><th><code>noindex</code></th><th><code>robots.txt</code></th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Dónde se declara</td><td>En el <code>&lt;head&gt;</code> de la página</td><td>En un archivo de la raíz</td></tr>
+                  <tr><td>Qué controla</td><td>La indexación</td><td>El rastreo</td></tr>
+                  <tr><td>Efecto sobre la URL</td><td>Puede seguir apareciendo si está enlazada, pero sin contenido indexado</td><td>El bot no visita la ruta</td></tr>
+                  <tr><td>Uso típico</td><td>Páginas de agradecimiento, filtros, contenido duplicado</td><td>Áreas privadas, carpetas de desarrollo</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li><code>https://usuario.github.io/robots.txt</code> muestra el contenido en texto plano.</li>
+                <li>No hay líneas vacías entre directivas del mismo grupo.</li>
+                <li>La URL del <code>Sitemap</code> es absoluta y con <code>https</code>.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del <code>robots.txt</code> abierto en el navegador desde la URL publicada.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-9">
+            <h2><span class="num">09</span> Crear el sitemap.xml</h2>
+            <p class="subtitulo">Un mapa de las URLs importantes para facilitar su descubrimiento.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear un <code>sitemap.xml</code> válido con las tres páginas publicadas y comprobar que Google puede leerlo.</p>
+            </div>
+
+            <div class="codigo" data-lenguaje="XML">
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://usuario.github.io/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://usuario.github.io/servicios.html&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://usuario.github.io/contacto.html&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+            </div>
+
+            <ul>
+              <li>El sitemap enumera las URLs importantes y facilita su descubrimiento, sobre todo si hay muchas páginas o pocos enlaces internos.</li>
+              <li>Las direcciones deben coincidir <strong>exactamente</strong> con las URL publicadas y con el <code>canonical</code>.</li>
+              <li>No incluyas páginas que no existan, que devuelvan error o que tengan <code>noindex</code>.</li>
+              <li>Un sitemap no garantiza la indexación: es una ayuda, no una orden.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Errores que invalidan el XML</p>
+              <ul>
+                <li>Olvidar el cierre <code>&lt;/urlset&gt;</code>.</li>
+                <li>Usar rutas relativas en <code>&lt;loc&gt;</code>.</li>
+                <li>Dejar <code>usuario</code> sin sustituir por tu nombre de GitHub.</li>
+                <li>Guardar el archivo como <code>sitemap.xml.txt</code>.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ol>
+                <li>Abre <code>https://usuario.github.io/sitemap.xml</code> y revisa que el navegador no muestra errores de XML.</li>
+                <li>Comprueba que cada <code>&lt;loc&gt;</code> responde con un 200.</li>
+                <li>Valida el archivo con el validador de sitemaps o con Search Console.</li>
+              </ol>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del <code>sitemap.xml</code> publicado y del resultado de la validación.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-10">
+            <h2><span class="num">10</span> Crear una página 404 personalizada</h2>
+            <p class="subtitulo">Un error bien resuelto mantiene al usuario dentro del sitio.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear <code>404.html</code>, comprobar que devuelve el estado HTTP 404 y ofrecer rutas de salida al usuario.</p>
+            </div>
+
+            <p>En la raíz del proyecto crea <code>404.html</code>:</p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;main&gt;
+  &lt;h1&gt;¡Vaya! No encontramos esta página&lt;/h1&gt;
+  &lt;p&gt;
+    Puede que la dirección sea incorrecta o que la página ya no exista.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;a href="/"&gt;Volver a TecnoSerprofes&lt;/a&gt; ·
+    &lt;a href="/servicios.html"&gt;Ver nuestros servicios&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/main&gt;</code></pre>
+            </div>
+
+            <p>
+              GitHub Pages reconoce el archivo <code>404.html</code> en la raíz y lo muestra cuando no encuentra una
+              dirección. Debe conservar el mismo estilo visual que el resto de la web.
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Soft 404: el error que engaña a Google</p>
+              <p>
+                Una página 404 correcta devuelve el código de estado <strong>HTTP 404</strong> y ofrece ayuda para
+                seguir navegando. Si devuelve <strong>200</strong> se convierte en un <em>soft 404</em>: parece una
+                página normal, Google la rastrea como válida y confunde a los usuarios. No redirijas siempre a la
+                portada con JavaScript.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ol>
+                <li>Abre una URL inexistente, por ejemplo <code>https://usuario.github.io/no-existe</code>.</li>
+                <li>En DevTools → <em>Network</em>, el documento debe mostrar <strong>404</strong>.</li>
+                <li>La página se ve con el diseño del sitio y tiene enlaces útiles.</li>
+              </ol>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la página 404 y del estado HTTP 404 en la pestaña Network.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-11">
+            <h2><span class="num">11</span> HTTPS y redirecciones 301</h2>
+            <p class="subtitulo">La seguridad y los cambios de dirección también son SEO técnico.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Activar HTTPS en GitHub Pages, entender qué es una redirección 301 y saber qué alternativas hay cuando el hosting no permite configurarlas.</p>
+            </div>
+
+            <h3>HTTPS en GitHub Pages</h3>
+            <ol>
+              <li>Entra en el repositorio → <em>Settings</em> → <em>Pages</em>.</li>
+              <li>En <em>Enforce HTTPS</em>, activa la casilla.</li>
+              <li>Espera a que GitHub emita el certificado y comprueba que <code>http://</code> redirige a <code>https://</code>.</li>
+            </ol>
+            <p>
+              HTTPS cifra la conexión y es una señal de confianza para usuarios y buscadores. En GitHub Pages es
+              gratuito y automático para dominios <code>github.io</code>.
+            </p>
+
+            <h3>Qué es una redirección 301</h3>
+            <p>
+              Una redirección 301 indica que una URL se ha movido de forma <strong>permanente</strong> a otra. Se usa al
+              cambiar rutas o dominios, y ayuda a conservar las señales y la experiencia de los usuarios. Conviene
+              apuntar directamente al destino final y evitar cadenas de redirecciones.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Códigos que debes reconocer</caption>
+                <thead>
+                  <tr><th>Código</th><th>Significado</th><th>Uso típico</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>200</td><td>OK</td><td>Página disponible</td></tr>
+                  <tr><td>301</td><td>Movido permanentemente</td><td>Cambio de URL o dominio</td></tr>
+                  <tr><td>302</td><td>Movido temporalmente</td><td>Promociones o pruebas</td></tr>
+                  <tr><td>404</td><td>No encontrado</td><td>URL inexistente</td></tr>
+                  <tr><td>410</td><td>Eliminado definitivamente</td><td>Contenido retirado sin sustituto</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Cómo se implementa según el hosting</h3>
+            <div class="codigo" data-lenguaje="Apache · .htaccess">
+<pre><code>Redirect 301 /servicios.html /servicios/</code></pre>
+            </div>
+
+            <div class="codigo" data-lenguaje="Netlify · _redirects">
+<pre><code>/servicios.html  /servicios/  301</code></pre>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Limitación de GitHub Pages</p>
+              <p>
+                GitHub Pages no permite configurar redirecciones 301 del servidor ni cabeceras personalizadas. Si tu
+                proyecto necesita redirecciones reales, usa Netlify, Cloudflare Pages o un hosting con Apache/Nginx, o
+                planifica las URLs definitivas antes de publicar. En WordPress lo resolverás con el plugin Redirection.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li><code>http://usuario.github.io/</code> termina en <code>https://</code>.</li>
+                <li>El candado aparece en la barra del navegador.</li>
+                <li>Sabes explicar la diferencia entre 301, 302 y 404 con un ejemplo propio.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de <em>Enforce HTTPS</em> activado y de la URL con candado.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-12">
+            <h2><span class="num">12</span> Añadir Open Graph para redes sociales</h2>
+            <p class="subtitulo">Controla cómo se ve tu página cuando la comparten.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Añadir etiquetas Open Graph a la portada y comprobar la vista previa en una red social o validador.</p>
+            </div>
+
+            <p>
+              Cuando compartes una página en una red social o en una aplicación de mensajería, aparece una imagen, un
+              título y una descripción. Open Graph permite controlar parte de esa información.
+            </p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;meta property="og:title" content="Reparación de ordenadores en Toledo | TecnoSerprofes"&gt;
+&lt;meta property="og:description" content="Servicio técnico y mantenimiento informático para particulares y empresas en Toledo."&gt;
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:url" content="https://usuario.github.io/"&gt;
+&lt;meta property="og:image" content="https://usuario.github.io/img/reparacion-ordenador.webp"&gt;
+&lt;meta property="og:locale" content="es_ES"&gt;</code></pre>
+            </div>
+
+            <ul>
+              <li><code>og:title</code>, <code>og:description</code> y <code>og:image</code> son los tres campos imprescindibles.</li>
+              <li>La imagen debe ser absoluta, pública y de al menos 1200 × 630 px para verse bien en la mayoría de plataformas.</li>
+              <li><code>og:type</code> suele ser <code>website</code> en portadas y <code>article</code> en entradas de blog.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Open Graph no es un factor de ranking</p>
+              <p>
+                Mejora la presentación y el CTR social, pero no posiciona por sí mismo en Google. No lo confundas con
+                los datos estructurados, que verás en la actividad 2.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ol>
+                <li>Pega la URL publicada en el validador de Open Graph o en el depurador de la red social.</li>
+                <li>Deben aparecer el título, la descripción y la imagen correctos.</li>
+                <li>Si la imagen no sale, revisa que la ruta sea absoluta y que el archivo exista.</li>
+              </ol>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la vista previa generada al compartir la URL.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-13">
+            <h2><span class="num">13</span> Publicar la web con GitHub Pages</h2>
+            <p class="subtitulo">Del ordenador local a una URL pública y rastreable.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear el repositorio, subir los archivos y activar GitHub Pages en la rama <code>main</code>.</p>
+            </div>
+
+            <ol>
+              <li>Entra en GitHub y pulsa <em>New repository</em>.</li>
+              <li>Llama al repositorio <code>usuario.github.io</code>, sustituyendo <code>usuario</code> por tu nombre de GitHub.</li>
+              <li>Marca el repositorio como <strong>Public</strong> y créalo.</li>
+              <li>Sube <code>index.html</code>, <code>servicios.html</code>, <code>contacto.html</code>, <code>404.html</code>, <code>robots.txt</code>, <code>sitemap.xml</code> y las carpetas <code>css/</code> e <code>img/</code>.</li>
+              <li>Ve a <em>Settings</em> → <em>Pages</em>.</li>
+              <li>En <em>Build and deployment</em>, elige <em>Deploy from a branch</em>, rama <code>main</code> y carpeta <code>/(root)</code>.</li>
+              <li>Pulsa <em>Save</em> y espera a que termine la publicación.</li>
+            </ol>
+
+            <p>
+              Al llamar al repositorio <code>usuario.github.io</code> obtienes una <em>User Site</em> publicada
+              directamente en <code>https://usuario.github.io/</code>, sin subcarpeta.
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Rutas que se rompen al publicar</p>
+              <p>
+                Si en local abres los archivos con <code>file:///</code>, algunas rutas parecen funcionar y en GitHub
+                Pages fallan. Prueba siempre con Live Server y revisa que las rutas sean relativas y respeten
+                mayúsculas y minúsculas.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li><code>https://usuario.github.io/</code> carga la portada.</li>
+                <li>Los enlaces a servicios y contacto funcionan.</li>
+                <li>La imagen y los estilos se cargan (mira la pestaña Network: no debe haber 404).</li>
+                <li><code>/robots.txt</code> y <code>/sitemap.xml</code> se muestran.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>URL pública y captura de <em>Settings → Pages</em> con el despliegue correcto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-14">
+            <h2><span class="num">14</span> Verificar el sitio en Google Search Console</h2>
+            <p class="subtitulo">Comunicar a Google que el sitio existe y comprobar cómo lo ve.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Añadir la propiedad, verificarla con una etiqueta HTML, enviar el sitemap y solicitar la indexación de la portada.</p>
+            </div>
+
+            <h3>Qué es Search Console</h3>
+            <p>
+              Es una herramienta gratuita de Google que permite comprobar si Google puede acceder a la web, consultar
+              la indexación, enviar sitemaps, revisar problemas de rastreo y ver las búsquedas que generan impresiones
+              y clics cuando hay datos suficientes.
+            </p>
+
+            <h3>Pasos</h3>
+            <ol>
+              <li>Entra en <code>https://search.google.com/search-console/</code> con tu cuenta de Google.</li>
+              <li>Pulsa <em>Añadir propiedad</em> y elige <em>Prefijo de URL</em>.</li>
+              <li>Introduce la dirección completa publicada, con <code>https://</code> y barra final: <code>https://usuario.github.io/</code>.</li>
+              <li>Elige el método de verificación <em>Etiqueta HTML</em>.</li>
+              <li>Copia la etiqueta que te da Google y pégala dentro del <code>&lt;head&gt;</code> de <code>index.html</code>.</li>
+              <li>Sube el cambio a GitHub, espera a que se publique y pulsa <em>Verificar</em>.</li>
+              <li>Entra en <em>Sitemaps</em>, escribe <code>sitemap.xml</code> y pulsa <em>Enviar</em>.</li>
+              <li>Usa <em>Inspección de URLs</em> con la portada y, si aún no está indexada, pulsa <em>Solicitar indexación</em>.</li>
+            </ol>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;meta name="google-site-verification" content="CODIGO_PROPORCIONADO_POR_GOOGLE"&gt;</code></pre>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">No borres la etiqueta</p>
+              <p>
+                Si eliminas la etiqueta de verificación, Google puede retirar la propiedad. Tampoco esperes indexación
+                inmediata: puede tardar días o semanas y no está garantizada.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>La propiedad aparece como verificada.</li>
+                <li>El sitemap figura como enviado y sin errores.</li>
+                <li>La inspección de la portada muestra que la URL está en Google o permite solicitar su indexación.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la propiedad verificada, del sitemap enviado y de la inspección de URL.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-15">
+            <h2><span class="num">15</span> Medir con Lighthouse y PageSpeed Insights</h2>
+            <p class="subtitulo">Detectar problemas es más útil que perseguir una puntuación perfecta.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Obtener un informe de rendimiento, accesibilidad, buenas prácticas y SEO, y proponer dos mejoras concretas.</p>
+            </div>
+
+            <ol>
+              <li>Abre la web publicada en Chrome.</li>
+              <li>Pulsa <kbd>F12</kbd> y entra en la pestaña <em>Lighthouse</em>.</li>
+              <li>Selecciona <em>Rendimiento</em>, <em>Accesibilidad</em>, <em>Buenas prácticas</em> y <em>SEO</em>.</li>
+              <li>Genera el informe en modo móvil.</li>
+              <li>Repite la medición en <code>https://pagespeed.web.dev/</code> para obtener datos de laboratorio y, si existen, de campo.</li>
+            </ol>
+
+            <p>
+              Anota <strong>dos aspectos que funcionan bien</strong> y <strong>dos que podrías mejorar</strong>. No es
+              necesario alcanzar 100: lo importante es detectar problemas y justificar las mejoras.
+            </p>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Si no hay datos de campo</p>
+              <p>
+                PageSpeed Insights puede no tener datos reales de un sitio nuevo o con pocas visitas. En ese caso,
+                trabaja con los datos de laboratorio de Lighthouse e indícalo en la entrega.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>El informe se ha generado sin errores.</li>
+                <li>Identificas al menos una oportunidad de mejora y sabes a qué página afecta.</li>
+                <li>Relacionas la mejora con un elemento del HTML o de las imágenes.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Informe en PDF o captura de las cuatro categorías y lista de dos mejoras propuestas.</p>
+            </div>
+          </section>
+
+          <section id="checklist">
+            <h2>Checklist de entrega</h2>
+            <p>Marca cada punto cuando esté terminado. El progreso se guarda en este navegador.</p>
+
+            <div class="checklist-panel">
+              <div class="checklist-cabecera">
+                <h3>Antes de entregar</h3>
+                <div class="progreso">
+                  <div class="progreso-barra" role="progressbar" aria-label="Progreso de la checklist" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso-relleno" data-progreso-relleno></div>
+                  </div>
+                  <span class="progreso-texto" data-progreso-texto>0 de 0 · 0%</span>
+                </div>
+              </div>
+
+              <ul class="checklist">
+                <li><label><input type="checkbox" data-check="a1-estructura"> <span>He creado la estructura de carpetas y las tres páginas.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-semantica"> <span>Uso <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code> y <code>footer</code>.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-titles"> <span>Cada página tiene un <code>title</code> único y descriptivo.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-metas"> <span>Cada página tiene su propia meta description.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-h1"> <span>Hay un solo <code>h1</code> por página y la jerarquía de encabezados es correcta.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-urls"> <span>Las URLs y los nombres de archivo son legibles, en minúsculas y sin espacios.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-canonical"> <span>Las tres páginas tienen <code>canonical</code> absoluto y correcto.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-alt"> <span>Las imágenes tienen nombre descriptivo, formato adecuado y <code>alt</code> útil.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-movil"> <span>La web se visualiza correctamente en móvil.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-robots"> <span>Existe <code>robots.txt</code> y se puede consultar publicado.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-sitemap"> <span>Existe <code>sitemap.xml</code> con las URL publicadas y se puede consultar.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-404"> <span>La página 404 devuelve estado HTTP 404 y ofrece enlaces útiles.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-https"> <span>HTTPS está activado y <code>http://</code> redirige a <code>https://</code>.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-og"> <span>He añadido Open Graph y comprobado la vista previa al compartir.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-pages"> <span>La web está publicada en GitHub Pages y todos los enlaces funcionan.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-gsc"> <span>La propiedad está verificada en Search Console y el sitemap enviado.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-lighthouse"> <span>He generado el informe de Lighthouse y propuesto dos mejoras.</span></label></li>
+                <li><label><input type="checkbox" data-check="a1-test"> <span>He realizado el test de autoevaluación y revisado los fallos.</span></label></li>
+              </ul>
+
+              <div class="checklist-acciones">
+                <button class="boton boton-suave" type="button" data-reiniciar>Reiniciar checklist</button>
+                <button class="boton boton-suave" type="button" data-imprimir>Imprimir / PDF</button>
+              </div>
+            </div>
+          </section>
+          <section id="trazabilidad">
+            <h2>Trazabilidad con el test</h2>
+            <p>
+              Esta tabla conecta cada pregunta del test de <em>SEO básico en página estática</em> con el paso donde se
+              practica y la evidencia que lo demuestra. Si fallas una pregunta, vuelve al paso indicado.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Las 20 preguntas del test y su práctica correspondiente</caption>
+                <thead>
+                  <tr><th>Pregunta del test</th><th>Dónde se practica</th><th>Evidencia</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1. Qué caracteriza a una página web estática</td><td>Paso 2 · ¿Estática o dinámica?</td><td>Explicación escrita en la entrega</td></tr>
+                  <tr><td>2. Ventaja SEO de un sitio estático</td><td>Paso 2 · HTML ya servido y velocidad</td><td>Informe de Lighthouse</td></tr>
+                  <tr><td>3. Dónde se define el <code>title</code></td><td>Paso 2 · Estructura del <code>head</code></td><td>Captura de DevTools</td></tr>
+                  <tr><td>4. Cómo debe ser el <code>title</code></td><td>Pasos 2, 3 y 4</td><td>Los tres títulos del proyecto</td></tr>
+                  <tr><td>5. Afirmación correcta sobre la meta description</td><td>Paso 2 · Tabla de elementos SEO</td><td>Metas de las tres páginas</td></tr>
+                  <tr><td>6. Cuántos <code>h1</code> conviene usar</td><td>Paso 2 · Jerarquía de encabezados</td><td>Captura del <code>h1</code> único</td></tr>
+                  <tr><td>7. Jerarquía de encabezados correcta</td><td>Paso 3 · Tres <code>h2</code> bajo un <code>h1</code></td><td>Estructura de <code>servicios.html</code></td></tr>
+                  <tr><td>8. Qué URL es más amigable</td><td>Paso 7 · URLs amigables</td><td>Tabla comparativa y URL publicada</td></tr>
+                  <tr><td>9. Qué archivo se sirve en un directorio</td><td>Paso 7 · <code>index.html</code> por defecto</td><td>Ampliación carpeta/<code>index.html</code></td></tr>
+                  <tr><td>10. Para qué sirve el atributo <code>alt</code></td><td>Paso 5 · Imágenes</td><td>Código de la imagen</td></tr>
+                  <tr><td>11. Qué nombre de archivo es mejor para una imagen</td><td>Paso 5 · Nombres descriptivos</td><td>Archivo <code>reparacion-ordenador.webp</code></td></tr>
+                  <tr><td>12. Cómo deben ser los enlaces internos</td><td>Pasos 3 y 4 · Rutas relativas y texto descriptivo</td><td>Captura de los enlaces</td></tr>
+                  <tr><td>13. Qué hace <code>robots.txt</code></td><td>Paso 8 · Directivas y bloqueo</td><td><code>robots.txt</code> publicado</td></tr>
+                  <tr><td>14. Para qué sirve <code>sitemap.xml</code></td><td>Paso 9 · Sitemap</td><td><code>sitemap.xml</code> publicado y validado</td></tr>
+                  <tr><td>15. Qué indica una etiqueta canonical</td><td>Paso 7 · Canonical</td><td><code>canonical</code> de las tres páginas</td></tr>
+                  <tr><td>16. Diferencia entre <code>noindex</code> y <code>robots.txt</code></td><td>Paso 8 · Tabla comparativa</td><td>Explicación escrita</td></tr>
+                  <tr><td>17. Qué hace una redirección 301</td><td>Paso 11 · HTTPS y 301</td><td>Tabla de códigos y ejemplo</td></tr>
+                  <tr><td>18. Cómo debe ser una página 404 personalizada</td><td>Paso 10 · Página 404</td><td>Estado HTTP 404 en Network</td></tr>
+                  <tr><td>19. Para qué sirven las etiquetas Open Graph</td><td>Paso 12 · Open Graph</td><td>Vista previa al compartir</td></tr>
+                  <tr><td>20. Qué hacer justo después de publicar</td><td>Pasos 14 y 15 · Search Console y Lighthouse</td><td>Capturas de GSC y del informe</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              <a class="boton" href="../quizzes/quiz-seo-basico-pagina-estatica.html">
+                Abrir el test de SEO básico
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </p>
+          </section>
+
+          <section id="autoevaluacion">
+            <h2>Autoevaluación</h2>
+            <p>Responde antes de desplegar la respuesta. Si fallas, vuelve al paso indicado.</p>
+
+            <div class="autoevaluacion">
+              <details>
+                <summary>¿Por qué no conviene repetir el mismo <code>title</code> en todas las páginas?</summary>
+                <div class="respuesta">
+                  <p>
+                    Porque cada página compite por una intención distinta. Si comparten título y descripción, los
+                    buscadores no pueden distinguirlas y ambas pierden relevancia. Además, el usuario ve resultados
+                    duplicados y baja el CTR. Cada página debe tener un título único, descriptivo y con su keyword
+                    principal. <em>Ver paso 2.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Un <code>robots.txt</code> con <code>Disallow: /</code> elimina la web de Google?</summary>
+                <div class="respuesta">
+                  <p>
+                    No. Solo impide el rastreo. La URL puede seguir apareciendo en el índice si tiene enlaces externos.
+                    Para excluirla del índice hay que usar <code>noindex</code>, y no conviene combinarlo con un bloqueo
+                    en <code>robots.txt</code>, porque el robot podría no llegar a leer la directiva.
+                    <em>Ver paso 8.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Para qué sirve el <code>canonical</code> y en qué se diferencia de una 301?</summary>
+                <div class="respuesta">
+                  <p>
+                    El <code>canonical</code> indica cuál es la URL preferida cuando hay varias versiones del mismo
+                    contenido; es una sugerencia. Una 301 es una redirección permanente del servidor: lleva al usuario y
+                    al bot a la nueva URL y transmite la autoridad. <em>Ver pasos 7 y 11.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Qué diferencia hay entre un 404 y un soft 404?</summary>
+                <div class="respuesta">
+                  <p>
+                    Un 404 devuelve el código HTTP 404 y avisa de que la página no existe. Un soft 404 devuelve 200 con
+                    un mensaje de error, así que el buscador lo trata como una página válida. Es un problema habitual en
+                    páginas que redirigen siempre a la portada con JavaScript. <em>Ver paso 10.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Por qué el <code>sitemap.xml</code> debe coincidir con el <code>canonical</code>?</summary>
+                <div class="respuesta">
+                  <p>
+                    Porque ambos comunican a Google cuál es la URL preferida. Si el sitemap incluye una variante con
+                    parámetros o con <code>index.html</code> y el canonical apunta a otra, se envían señales
+                    contradictorias y se reparte la autoridad. <em>Ver pasos 7 y 9.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Open Graph mejora el posicionamiento en Google?</summary>
+                <div class="respuesta">
+                  <p>
+                    No es un factor de ranking directo. Controla cómo se muestra la página al compartirla en redes
+                    sociales y mensajería, lo que puede mejorar el CTR social. Para datos estructurados y resultados
+                    enriquecidos se usa Schema.org. <em>Ver paso 12.</em>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </section>
+
+          <section id="entrega">
+            <h2>Entrega y rúbrica</h2>
+
+            <h3>Qué debes entregar</h3>
+            <ol>
+              <li>URL pública de la web en GitHub Pages.</li>
+              <li>Enlace al repositorio de GitHub.</li>
+              <li>Capturas de: estructura del proyecto, <code>title</code> y meta description de cada página, <code>canonical</code>, imagen con <code>alt</code>, vista móvil, <code>robots.txt</code>, <code>sitemap.xml</code>, página 404 con estado HTTP, HTTPS activo y vista previa de Open Graph.</li>
+              <li>Captura de Search Console con la propiedad verificada y el sitemap enviado.</li>
+              <li>Informe de Lighthouse o PageSpeed Insights y una lista de dos mejoras propuestas.</li>
+              <li>Breve explicación escrita (máximo una página) de tres decisiones SEO y por qué las tomaste.</li>
+            </ol>
+
+            <div class="tabla rubrica">
+              <table>
+                <caption>Rúbrica de evaluación sobre 100 puntos</caption>
+                <thead>
+                  <tr><th>Bloque</th><th>Qué se valora</th><th>Puntos</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estructura y HTML</td><td>Semántica correcta, jerarquía de encabezados, navegación funcional y responsive.</td><td>15</td></tr>
+                  <tr><td>SEO on page</td><td><code>title</code> y meta description únicos, contenido alineado con la keyword e imágenes con <code>alt</code> útil.</td><td>20</td></tr>
+                  <tr><td>URLs y canonical</td><td>Nombres legibles, rutas relativas correctas y canonical absoluto y coherente.</td><td>10</td></tr>
+                  <tr><td>Rastreo e indexación</td><td><code>robots.txt</code>, <code>sitemap.xml</code>, diferencia entre <code>noindex</code> y rastreo.</td><td>15</td></tr>
+                  <tr><td>Errores y seguridad</td><td>404 con estado correcto, HTTPS activo y comprensión de la 301.</td><td>10</td></tr>
+                  <tr><td>Publicación y GSC</td><td>Sitio publicado, propiedad verificada, sitemap enviado e inspección de URL.</td><td>15</td></tr>
+                  <tr><td>Medición</td><td>Informe de Lighthouse y dos mejoras justificadas.</td><td>10</td></tr>
+                  <tr><td>Documentación</td><td>Evidencias completas y explicación clara de las decisiones.</td><td>5</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Criterio de suficiencia</p>
+              <p>
+                Se considera superada la actividad con 50 puntos o más, siempre que estén aprobados los bloques de SEO
+                on page y Publicación y GSC. Sin web publicada no se puede evaluar la parte técnica.
+              </p>
+            </div>
+
+            <nav class="paginacion" aria-label="Navegación entre actividades">
+              <a href="../index.html">
+                <small>Volver</small>
+                <strong>Portada de actividades</strong>
+              </a>
+              <a class="siguiente" href="../actividad-2-seo-avanzado/">
+                <small>Siguiente</small>
+                <strong>Actividad 2 · SEO avanzado</strong>
+              </a>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <p><strong>Actividades de SEO</strong> · IFCD0210 · Módulo 3</p>
+      <p><a href="../index.html">Todas las actividades</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/actividades.js"></script>
+</body>
+</html>
