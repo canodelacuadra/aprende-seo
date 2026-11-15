@@ -8,8 +8,8 @@ Material didáctico del módulo 3 del IFCD0210. Tres actividades guiadas y tres 
 actividades-seo/
 ├── index.html                          Portada del material
 ├── actividad-1-seo-basico/             Actividad 1 completa
-├── actividad-2-seo-avanzado/           Actividad 2 (en preparación)
-├── actividad-3-wordpress-woocommerce/  Actividad 3 (en preparación)
+├── actividad-2-seo-avanzado/           Actividad 2 completa
+├── actividad-3-wordpress-woocommerce/  Actividad 3 completa
 ├── quizzes/                            Tests de autoevaluación
 │   ├── index.html
 │   ├── assets/

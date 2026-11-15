@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Actividad 3 · SEO en WordPress y WooCommerce | IFCD0210</title>
-  <meta name="description" content="Actividad 3 del módulo 3 del IFCD0210: SEO en WordPress y WooCommerce sobre el proyecto TecnoSerprofes. Contenido en preparación.">
-  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Actividad guiada de SEO en WordPress y WooCommerce sobre el proyecto TecnoSerprofes: visibilidad, enlaces permanentes, Yoast, taxonomías, duplicados, fichas de producto, filtros, reseñas y rendimiento.">
   <meta name="theme-color" content="#0891b2">
   <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -27,35 +26,1474 @@
         </span>
       </a>
 
-      <nav class="nav-superior" aria-label="Navegación principal">
+      <nav class="nav-superior" aria-label="Navegación de la actividad">
         <a href="../index.html">Actividades</a>
-        <a href="../actividad-1-seo-basico/">Actividad 1</a>
-        <a href="../actividad-2-seo-avanzado/">Actividad 2</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#trazabilidad">Trazabilidad</a>
+        <a href="#entrega">Entrega</a>
+        <button class="boton boton-suave" type="button" data-imprimir>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8" rx="1"></rect>
+          </svg>
+          Imprimir / PDF
+        </button>
       </nav>
     </div>
   </header>
 
   <main id="contenido">
     <div class="contenedor">
-      <div class="preparacion">
-        <span class="icono" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-          </svg>
-        </span>
-        <h1>Actividad 3 · SEO en WordPress y WooCommerce</h1>
-        <p>
-          Esta actividad está en preparación. Incluirá la configuración de WordPress con Yoast, enlaces permanentes,
-          taxonomías, control de duplicados y paginación, y una parte específica de WooCommerce: fichas de producto,
-          variaciones, filtros, reseñas, checkout y rendimiento de tienda.
+      <nav class="migas" aria-label="Migas de pan">
+        <a href="../index.html">Actividades</a>
+        <span aria-hidden="true">/</span>
+        <span>Actividad 3</span>
+      </nav>
+
+      <section class="hero">
+        <p class="ceja">Actividad 3 · Nivel intermedio-avanzado</p>
+        <h1>SEO en WordPress y WooCommerce</h1>
+        <p class="intro">
+          La misma empresa, otro motor. Trasladas <strong>TecnoSerprofes</strong> a WordPress, configuras el CMS y el
+          plugin SEO, ordenas taxonomías y duplicados, y montas una tienda WooCommerce con fichas de producto, filtros
+          y reseñas sin generar un laberinto de URL.
         </p>
-        <p>
-          El proyecto seguirá usando la misma marca y ubicación que las actividades anteriores:
-          <strong>TecnoSerprofes</strong> en <strong>Toledo</strong>.
-        </p>
-        <div class="acciones">
-          <a class="boton" href="../actividad-1-seo-basico/">Ir a la actividad 1</a>
-          <a class="boton boton-suave" href="../index.html">Volver a la portada</a>
+
+        <ul class="chips">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+            </svg>
+            5-7 horas
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            WordPress
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            WooCommerce
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+            </svg>
+            Yoast SEO
+          </li>
+        </ul>
+
+        <div class="hero-datos">
+          <div class="dato">
+            <strong>19 pasos</strong>
+            <span>Recorrido</span>
+          </div>
+          <div class="dato">
+            <strong>Blog + tienda</strong>
+            <span>Entregable</span>
+          </div>
+          <div class="dato">
+            <strong>LocalWP</strong>
+            <span>Entorno</span>
+          </div>
+          <div class="dato">
+            <strong>20 preguntas</strong>
+            <span>Test asociado</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="layout">
+        <aside class="indice" aria-label="Índice de la actividad">
+          <p class="indice-titulo">Contenido</p>
+          <ol>
+            <li><a href="#antes">Antes de empezar</a></li>
+            <li><a href="#paso-1">Preparar WordPress</a></li>
+            <li><a href="#paso-2">Visibilidad e indexación</a></li>
+            <li><a href="#paso-3">Enlaces permanentes</a></li>
+            <li><a href="#paso-4">Instalar y configurar Yoast</a></li>
+            <li><a href="#paso-5">Optimizar la portada</a></li>
+            <li><a href="#paso-6">Servicios y contacto</a></li>
+            <li><a href="#paso-7">Entradas del blog</a></li>
+            <li><a href="#paso-8">Categorías y etiquetas</a></li>
+            <li><a href="#paso-9">Autor, fecha y paginación</a></li>
+            <li><a href="#paso-10">Contenido duplicado</a></li>
+            <li><a href="#paso-11">Imágenes y medios</a></li>
+            <li><a href="#paso-12">Sitemap y schema</a></li>
+            <li><a href="#paso-13">Rendimiento</a></li>
+            <li><a href="#paso-14">WooCommerce inicial</a></li>
+            <li><a href="#paso-15">Fichas de producto</a></li>
+            <li><a href="#paso-16">Variaciones y canonical</a></li>
+            <li><a href="#paso-17">Categorías y filtros</a></li>
+            <li><a href="#paso-18">Reseñas y schema</a></li>
+            <li><a href="#paso-19">Publicar y comparar</a></li>
+          </ol>
+          <div class="indice-extra">
+            <a href="#checklist">Checklist de entrega</a>
+            <a href="#trazabilidad">Trazabilidad con el test</a>
+            <a href="#autoevaluacion">Autoevaluación</a>
+            <a href="#entrega">Rúbrica</a>
+          </div>
+        </aside>
+
+        <div class="contenido">
+          <section id="antes">
+            <h2>Antes de empezar</h2>
+            <p>
+              Esta actividad reutiliza la marca y los contenidos de las dos anteriores, pero cambia la tecnología:
+              pasas de HTML estático a <strong>WordPress</strong> y añades una tienda <strong>WooCommerce</strong>. El
+              objetivo no es solo «que funcione», sino entender qué hace el CMS, qué hace el plugin SEO y qué sigue
+              dependiendo de ti.
+            </p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                Objetivos de aprendizaje
+              </p>
+              <ul>
+                <li>Configurar WordPress para que sea rastreable e indexable.</li>
+                <li>Elegir una estructura de URL legible y estable.</li>
+                <li>Instalar y configurar Yoast SEO sin duplicar funciones.</li>
+                <li>Optimizar páginas, entradas y medios con títulos y metas propios.</li>
+                <li>Organizar categorías y etiquetas sin generar contenido fino.</li>
+                <li>Controlar autor, fecha, paginación y fuentes de duplicado.</li>
+                <li>Montar una tienda WooCommerce con fichas, variaciones, filtros y reseñas bien resueltas.</li>
+                <li>Medir el rendimiento y comparar el SEO en HTML frente a WordPress.</li>
+              </ul>
+            </div>
+
+            <h3>Qué necesitas</h3>
+            <ul>
+              <li><strong>LocalWP</strong> (o un WordPress local equivalente) con una instalación nueva.</li>
+              <li>El tema <strong>GeneratePress</strong>, ya trabajado en clase.</li>
+              <li>El plugin <strong>Yoast SEO</strong> y el plugin <strong>WooCommerce</strong>.</li>
+              <li>Chrome con DevTools y Lighthouse.</li>
+              <li>Opcional: un hosting o servicio de publicación si quieres probar Search Console.</li>
+            </ul>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Local no es Internet</p>
+              <p>
+                En LocalWP la web funciona en tu ordenador, pero Google no puede acceder a ella. Puedes practicar toda
+                la configuración y medir con Lighthouse, pero la verificación en Search Console y el envío del sitemap
+                solo tienen sentido cuando el sitio esté publicado en una URL accesible. En la entrega se explica qué
+                parte es local y qué parte está publicada.
+              </p>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">No conviertas la práctica en una carrera de plugins</p>
+              <p>
+                Cada plugin añade peticiones, CSS, JavaScript y mantenimiento. Para esta actividad bastan GeneratePress,
+                Yoast SEO y WooCommerce. Si añades otro, debes poder justificar qué problema resuelve y qué coste tiene.
+              </p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-1">
+            <h2><span class="num">01</span> Preparar WordPress y la estructura</h2>
+            <p class="subtitulo">Antes de tocar SEO, la web debe tener las páginas y entradas correctas.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear la instalación, activar GeneratePress y dejar publicada la estructura mínima del proyecto.</p>
+            </div>
+
+            <ol>
+              <li>Crea un sitio nuevo en LocalWP y anota la ruta y el dominio local.</li>
+              <li>Completa el instalador de WordPress con el nombre <strong>TecnoSerprofes</strong>.</li>
+              <li>En <em>Apariencia → Temas</em>, instala y activa <strong>GeneratePress</strong>.</li>
+              <li>Crea las páginas y entradas de la tabla.</li>
+              <li>En <em>Apariencia → Menús</em>, crea el menú principal con Inicio, Servicios, Blog y Contacto.</li>
+              <li>Asigna la página de Inicio como portada estática en <em>Ajustes → Lectura</em>.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Contenido mínimo del proyecto</caption>
+                <thead>
+                  <tr><th>Tipo</th><th>Contenido</th><th>Slug previsto</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Página</td><td>Inicio</td><td><code>inicio</code></td></tr>
+                  <tr><td>Página</td><td>Servicios</td><td><code>servicios</code></td></tr>
+                  <tr><td>Página</td><td>Contacto</td><td><code>contacto</code></td></tr>
+                  <tr><td>Página</td><td>Blog</td><td><code>blog</code></td></tr>
+                  <tr><td>Entrada</td><td>Cómo elegir un portátil para estudiar o trabajar</td><td><code>elegir-portatil</code></td></tr>
+                  <tr><td>Entrada</td><td>Consejos para mantener un ordenador</td><td><code>mantenimiento-ordenador</code></td></tr>
+                  <tr><td>Entrada</td><td>¿Cuándo merece la pena reparar un ordenador?</td><td><code>reparar-o-comprar</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Contenido real, aunque sea ficticio</p>
+              <p>
+                No publiques entradas vacías con «Lorem ipsum». Cada página debe tener al menos varios párrafos con
+                información útil y coherente con TecnoSerprofes. El SEO se evalúa sobre contenido, no sobre marcadores
+                de posición.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del escritorio de WordPress, del tema activo y del menú principal.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-2">
+            <h2><span class="num">02</span> Comprobar la visibilidad del sitio</h2>
+            <p class="subtitulo">Un solo ajuste puede dejar toda la web fuera de Google.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Verificar que WordPress no está pidiendo a los buscadores que no indexen el sitio.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Ajustes → Lectura</em>.</li>
+              <li>Busca la opción <strong>Visibilidad en los motores de búsqueda</strong>.</li>
+              <li>Comprueba que <strong>no</strong> está marcada la casilla «Desanimar a los motores de búsqueda a indexar este sitio».</li>
+              <li>Guarda los cambios.</li>
+              <li>Si usas Yoast, revisa también <em>Yoast SEO → Ajustes → General → Visibilidad del sitio</em>.</li>
+            </ol>
+
+            <p>
+              Cuando esa opción está activa, WordPress añade <code>noindex</code> y bloquea la indexación del sitio. Es
+              habitual olvidarla activada tras pasar de un entorno local a producción, y entonces nada de lo que hagas
+              después aparece en Google.
+            </p>
+
+            <div class="codigo" data-lenguaje="HTML">
+<pre><code>&lt;!-- Señal de que el sitio está desanimado para los buscadores --&gt;
+&lt;meta name="robots" content="noindex, nofollow"&gt;</code></pre>
+            </div>
+
+            <h3>Cómo comprobarlo de verdad</h3>
+            <ul>
+              <li>Abre la portada y usa <em>Ver código fuente</em>: no debe aparecer <code>noindex</code>.</li>
+              <li>Revisa <code>https://tu-dominio/robots.txt</code>: no debe contener <code>Disallow: /</code>.</li>
+              <li>En Search Console, la inspección de URL debe indicar que la página se puede indexar.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Dos interruptores, no uno</p>
+              <p>
+                WordPress y Yoast pueden bloquear la indexación por separado. Si desactivas uno y el otro sigue activo,
+                el sitio continúa fuera. Comprueba siempre el HTML servido, no solo el panel.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de <em>Ajustes → Lectura</em> y del código fuente sin <code>noindex</code>.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-3">
+            <h2><span class="num">03</span> Configurar los enlaces permanentes</h2>
+            <p class="subtitulo">La estructura de URL se decide una vez y se cambia con cuidado.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Elegir una estructura de URL legible con el slug y comprobar cómo quedan páginas, entradas y productos.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Ajustes → Enlaces permanentes</em>.</li>
+              <li>Selecciona <strong>Nombre de la entrada</strong> (<code>/%postname%/</code>).</li>
+              <li>Guarda los cambios.</li>
+              <li>Comprueba la URL de una página y de una entrada.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué cambia con cada estructura</caption>
+                <thead>
+                  <tr><th>Estructura</th><th>Ejemplo</th><th>Valoración</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Simple</td><td><code>/?p=25</code></td><td>No dice nada al usuario ni al buscador.</td></tr>
+                  <tr><td>Día y nombre</td><td><code>/2026/11/15/elegir-portatil/</code></td><td>Añade fechas que envejecen el contenido.</td></tr>
+                  <tr><td>Nombre de la entrada</td><td><code>/elegir-portatil/</code></td><td>Legible, corta y estable. Recomendada.</td></tr>
+                  <tr><td>Personalizada</td><td><code>/blog/%postname%/</code></td><td>Útil si separas blog y tienda, pero alarga la URL.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              En WooCommerce, los productos tienen su propia base. En <em>WooCommerce → Ajustes → Productos → Enlaces
+              permanentes</em> puedes elegir algo como <code>/producto/</code> o <code>/tienda/%product_cat%/</code>. No
+              mezcles productos y entradas en la misma base si puedes evitarlo.
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Cambiar enlaces después de publicar</p>
+              <p>
+                Si ya tienes URL indexadas y cambias la estructura, las antiguas dejan de existir. WordPress intenta
+                redirigir algunas, pero no todas. Lo correcto es planificar la estructura antes de publicar y, si hay
+                cambios, crear redirecciones 301 una a una.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>Las URL son minúsculas, sin acentos y con guiones.</li>
+                <li>No aparece <code>?p=</code> en ninguna URL pública.</li>
+                <li>Páginas, entradas y productos tienen bases distintas y coherentes.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de <em>Ajustes → Enlaces permanentes</em> y de dos URL resultantes.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-4">
+            <h2><span class="num">04</span> Instalar y configurar Yoast SEO</h2>
+            <p class="subtitulo">El plugin automatiza tareas, pero no decide por ti.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Instalar Yoast SEO, completar los datos del sitio y revisar qué genera automáticamente.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Plugins → Añadir nuevo</em>.</li>
+              <li>Busca <strong>Yoast SEO</strong>, comprueba que es el plugin oficial y pulsa <em>Instalar ahora</em>.</li>
+              <li>Pulsa <em>Activar</em> y completa la configuración inicial.</li>
+              <li>Revisa estas secciones:
+                <ul>
+                  <li><em>General → Datos del sitio</em>: nombre, nombre alternativo, logo y perfiles sociales.</li>
+                  <li><em>General → Visibilidad del sitio</em>: debe permitir la indexación.</li>
+                  <li><em>Apariencia en el buscador</em>: plantillas de título y meta description.</li>
+                  <li><em>Tipos de contenido</em> y <em>Taxonomías</em>: qué se indexa y qué no.</li>
+                  <li><em>Sitemaps</em>: activados.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué gestiona Yoast y qué no</caption>
+                <thead>
+                  <tr><th>Yoast sí gestiona</th><th>Yoast no resuelve</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Títulos y metas por página</td><td>La calidad del contenido.</td></tr>
+                  <tr><td>Canonical y <code>noindex</code></td><td>Una estructura de URL mal pensada.</td></tr>
+                  <tr><td>Sitemap XML</td><td>Enlaces internos pobres o páginas huérfanas.</td></tr>
+                  <tr><td>Schema básico</td><td>Datos falsos o duplicados entre plugins.</td></tr>
+                  <tr><td>Análisis de legibilidad y SEO</td><td>Que la página posicione. Solo son recomendaciones.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Un solo plugin SEO</p>
+              <p>
+                No instales Yoast y Rank Math a la vez. Ambos generan títulos, canonical, sitemap y schema, y acabarás
+                con etiquetas duplicadas y señales contradictorias. Elige uno y desactiva el otro.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del plugin activo y de la pantalla de datos del sitio.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-5">
+            <h2><span class="num">05</span> Optimizar la página de inicio</h2>
+            <p class="subtitulo">Una keyword principal, un título propio y una descripción útil.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Configurar la frase clave, el título SEO y la meta description de la portada, y revisar su contenido.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Páginas → Inicio → Editar</em>.</li>
+              <li>Localiza el panel de Yoast SEO.</li>
+              <li>Escribe la frase clave objetivo: <strong>reparación informática en Toledo</strong>.</li>
+              <li>Configura el título SEO y la meta description de la tabla.</li>
+              <li>Revisa el contenido: un <code>h1</code>, subtítulos <code>h2</code>, texto de servicios, enlaces internos e imágenes con <code>alt</code>.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Ejemplo de configuración para la portada</caption>
+                <thead>
+                  <tr><th>Campo</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Frase clave</td><td>reparación informática en Toledo</td></tr>
+                  <tr><td>Título SEO</td><td>Reparación informática en Toledo | TecnoSerprofes</td></tr>
+                  <tr><td>Meta description</td><td>Servicios de reparación y mantenimiento informático en Toledo. Soluciones para ordenadores, portátiles y equipos informáticos.</td></tr>
+                  <tr><td>Slug</td><td><code>inicio</code> o la raíz del dominio</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="codigo" data-lenguaje="HTML resultante">
+<pre><code>&lt;title&gt;Reparación informática en Toledo | TecnoSerprofes&lt;/title&gt;
+&lt;meta name="description" content="Servicios de reparación y mantenimiento informático en Toledo. Soluciones para ordenadores, portátiles y equipos informáticos."&gt;
+&lt;link rel="canonical" href="https://tu-dominio/"&gt;</code></pre>
+            </div>
+
+            <ul>
+              <li>El <code>title</code> debe describir la página y contener la keyword principal con naturalidad.</li>
+              <li>La meta description explica qué ofrece la página; no es un factor de ranking directo, pero influye en el CTR.</li>
+              <li>El <code>h1</code> visible debe coincidir con el tema, sin repetir literalmente el título SEO si suena forzado.</li>
+              <li>Enlaza desde la portada a Servicios, Blog y Contacto con textos descriptivos.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Los semáforos de Yoast no son una nota</p>
+              <p>
+                Yoast ofrece recomendaciones y avisos, pero no garantiza que una página vaya a posicionarse mejor.
+                Tampoco es necesario conseguir todos los indicadores en verde: a veces un texto natural incumple una
+                regla mecánica y está mejor así.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del panel de Yoast de la portada y del <code>head</code> publicado.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-6">
+            <h2><span class="num">06</span> Optimizar Servicios y Contacto</h2>
+            <p class="subtitulo">Cada página tiene su propia intención y su propio metadato.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Repetir el proceso en las páginas de Servicios y Contacto sin copiar títulos ni descripciones.</p>
+            </div>
+
+            <div class="tabla">
+              <table>
+                <caption>Títulos y descripciones de ejemplo</caption>
+                <thead>
+                  <tr><th>Página</th><th>Título SEO</th><th>Meta description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Servicios</td>
+                    <td>Servicios de reparación de ordenadores | TecnoSerprofes</td>
+                    <td>Conoce nuestros servicios de mantenimiento, reparación y puesta a punto de ordenadores y portátiles.</td>
+                  </tr>
+                  <tr>
+                    <td>Contacto</td>
+                    <td>Contactar con TecnoSerprofes | Reparación informática</td>
+                    <td>Contacta con TecnoSerprofes para solicitar información sobre nuestros servicios de reparación y mantenimiento informático.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              No copies el mismo título y la misma descripción en todas las páginas. Si dos páginas comparten metadatos,
+              el buscador no puede distinguir qué ofrece cada una y ambas pierden relevancia.
+            </p>
+
+            <h3>Qué debe tener cada página</h3>
+            <ul>
+              <li>Un <code>h1</code> distinto y alineado con la intención.</li>
+              <li>Contenido suficiente: no vale una línea y un formulario.</li>
+              <li>Enlaces internos hacia servicios concretos y hacia el blog.</li>
+              <li>En Contacto, datos reales o claramente ficticios, sin inventar direcciones que no existan.</li>
+              <li>Un formulario que funcione y una página de agradecimiento con <code>noindex</code>.</li>
+            </ul>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Páginas de agradecimiento</p>
+              <p>
+                La página que se muestra tras enviar un formulario no aporta valor en buscadores y puede recibir tráfico
+                residual. Configúrala con <code>noindex</code> desde Yoast y no la incluyas en el menú.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de los paneles de Yoast de Servicios y Contacto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-7">
+            <h2><span class="num">07</span> Optimizar las entradas del blog</h2>
+            <p class="subtitulo">El artículo informa; la página de servicio vende. No compiten por lo mismo.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Configurar las tres entradas con frase clave, título SEO, meta description, estructura, enlaces e imagen destacada.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Entradas</em> y edita cada artículo.</li>
+              <li>Comprueba el título y la estructura de encabezados.</li>
+              <li>Añade una frase clave objetivo distinta por entrada.</li>
+              <li>Configura el título SEO y la meta description.</li>
+              <li>Revisa los enlaces internos: al menos uno al servicio relacionado y otro a otra entrada.</li>
+              <li>Asigna una imagen destacada con <code>alt</code> y un nombre de archivo descriptivo.</li>
+              <li>Selecciona la categoría correspondiente.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Ejemplo para el artículo de portátiles</caption>
+                <thead>
+                  <tr><th>Campo</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Frase clave</td><td>cómo elegir un portátil</td></tr>
+                  <tr><td>Título SEO</td><td>Cómo elegir un portátil para estudiar | TecnoSerprofes</td></tr>
+                  <tr><td>Meta description</td><td>Descubre qué características debes valorar antes de comprar un portátil para estudiar o trabajar.</td></tr>
+                  <tr><td>Categoría</td><td>Equipos informáticos</td></tr>
+                  <tr><td>Enlaces internos</td><td>Servicios y artículo de mantenimiento</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>Las tres entradas tienen títulos y descripciones diferentes.</li>
+                <li>Ninguna keyword principal se repite entre portada, servicios y entradas.</li>
+                <li>Cada artículo tiene un solo <code>h1</code> y subtítulos coherentes.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del panel de Yoast de una entrada y de su vista publicada.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-8">
+            <h2><span class="num">08</span> Categorías, etiquetas y taxonomías finas</h2>
+            <p class="subtitulo">Cada archivo de taxonomía es una página más que puede competir o molestar.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Organizar el blog con categorías útiles y decidir qué hacer con las etiquetas y archivos con poco contenido.</p>
+            </div>
+
+            <div class="tabla">
+              <table>
+                <caption>Categorías y etiquetas no son lo mismo</caption>
+                <thead>
+                  <tr><th>Aspecto</th><th>Categorías</th><th>Etiquetas</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estructura</td><td>Jerárquica: pueden tener subcategorías.</td><td>Plana y transversal.</td></tr>
+                  <tr><td>Función</td><td>Agrupan el contenido principal.</td><td>Detallan temas concretos.</td></tr>
+                  <tr><td>Cantidad</td><td>Pocas y estables.</td><td>Pueden multiplicarse sin control.</td></tr>
+                  <tr><td>Riesgo SEO</td><td>Archivos duplicados si no hay descripción.</td><td>Páginas finas y contenido duplicado.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Para el proyecto, crea estas categorías:</p>
+            <ul>
+              <li><strong>Consejos informáticos</strong></li>
+              <li><strong>Mantenimiento</strong></li>
+              <li><strong>Equipos informáticos</strong></li>
+            </ul>
+
+            <h3>Qué hacer con las etiquetas</h3>
+            <ul>
+              <li>Úsalas solo si aportan una navegación real.</li>
+              <li>No crees una etiqueta por cada palabra clave.</li>
+              <li>Si un archivo de etiqueta tiene una sola entrada y poco texto, valora <code>noindex</code> o elimina la etiqueta.</li>
+              <li>En <em>Yoast → Ajustes → Taxonomías</em> puedes desactivar la indexación de etiquetas.</li>
+            </ul>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">La nube de etiquetas no es una estrategia SEO</p>
+              <p>
+                Una lista de veinte etiquetas en el pie no ayuda al usuario ni al buscador. Genera decenas de URL con
+                listados casi idénticos. Menos etiquetas, mejor elegidas, es la opción sensata.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de las categorías, de una etiqueta y de la configuración de indexación de taxonomías.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-9">
+            <h2><span class="num">09</span> Autor, fecha y paginación</h2>
+            <p class="subtitulo">Los archivos automáticos de WordPress no siempre merecen estar en Google.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Decidir qué hacer con los archivos de autor y fecha, y revisar la paginación del blog.</p>
+            </div>
+
+            <h3>Archivos de autor</h3>
+            <p>
+              Si el blog tiene un solo autor, el archivo de autor repite el listado del blog y no aporta nada. En ese
+              caso se aplica <code>noindex</code>. Si hay varios autores con biografía y contenido propio, pueden
+              indexarse y enlazarse desde cada artículo.
+            </p>
+
+            <h3>Archivos por fecha</h3>
+            <p>
+              Los archivos de mes o año generan listados duplicados y de poco valor para las búsquedas. Se recomienda
+              <code>noindex</code>, salvo que el sitio sea un archivo histórico con valor propio.
+            </p>
+
+            <h3>Paginación</h3>
+            <ul>
+              <li>Mantén la paginación rastreable y con enlaces claros entre páginas.</li>
+              <li>No apliques <code>noindex</code> a las páginas 2, 3… si son el único camino hacia entradas antiguas.</li>
+              <li>Cada página paginada debe tener su <code>canonical</code> a sí misma, no a la página 1.</li>
+              <li>Evita el desplazamiento infinito sin paginación real: el bot no hace scroll.</li>
+              <li>Los enlaces <code>rel="next"</code> y <code>rel="prev"</code> ya no los usa Google, pero ayudan a la navegación.</li>
+            </ul>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Dónde se configura en Yoast</p>
+              <p>
+                En <em>Yoast SEO → Ajustes → Tipos de contenido → Entradas</em> puedes desactivar la indexación de los
+                archivos de autor y fecha. Comprueba después el HTML: debe aparecer <code>noindex</code> solo en esos
+                archivos, no en las entradas.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de la configuración y del <code>head</code> de un archivo de autor con <code>noindex</code>.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-10">
+            <h2><span class="num">10</span> Revisar el contenido duplicado</h2>
+            <p class="subtitulo">WordPress crea URL que no sabías que existían.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Localizar las fuentes típicas de duplicados y decidir canonical, <code>noindex</code> o redirección.</p>
+            </div>
+
+            <div class="tabla">
+              <table>
+                <caption>Fuentes habituales de duplicados en WordPress</caption>
+                <thead>
+                  <tr><th>Fuente</th><th>Ejemplo</th><th>Qué hacer</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Adjuntos</td><td><code>/tecnico-reparando-ordenador/</code></td><td>Redirigir al archivo o a la entrada; evitar que se indexen.</td></tr>
+                  <tr><td>Feeds</td><td><code>/feed/</code></td><td>No indexar; son para lectores, no para búsquedas.</td></tr>
+                  <tr><td>Búsqueda interna</td><td><code>/?s=portatil</code></td><td><code>noindex</code> y bloquear parámetros infinitos.</td></tr>
+                  <tr><td>Parámetros</td><td><code>?utm_source=...</code>, <code>?fbclid=...</code></td><td>Canonical a la URL limpia.</td></tr>
+                  <tr><td>Barra final</td><td><code>/servicios</code> y <code>/servicios/</code></td><td>Elegir una y redirigir la otra.</td></tr>
+                  <tr><td>HTTP/HTTPS y www</td><td>Cuatro variantes del dominio</td><td>Redirigir todo a la versión canónica.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Cómo detectarlo</h3>
+            <ol>
+              <li>Busca en Google <code>site:tu-dominio</code> y revisa qué aparece.</li>
+              <li>En Search Console, consulta <em>Páginas</em> y agrupa por «Duplicada, Google ha elegido una versión diferente».</li>
+              <li>En Screaming Frog, revisa <em>Canonicals</em> y <em>Duplicate</em>.</li>
+              <li>Revisa en Yoast si los adjuntos están redirigidos y si la búsqueda interna está desindexada.</li>
+            </ol>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">No bloquees lo que necesitas rastrear</p>
+              <p>
+                Si bloqueas una URL en <code>robots.txt</code>, el bot no podrá leer su <code>noindex</code>. Para
+                excluir del índice, usa <code>noindex</code> y deja la URL rastreable. Reserva <code>robots.txt</code>
+                para rutas que no deben rastrearse nunca.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Tabla de duplicados detectados con la solución aplicada a cada uno.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-11">
+            <h2><span class="num">11</span> Imágenes y biblioteca multimedia</h2>
+            <p class="subtitulo">El <code>alt</code> describe la imagen, no repite la keyword.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Optimizar las imágenes del blog y de la tienda: nombre, formato, tamaño, <code>alt</code> y carga.</p>
+            </div>
+
+            <ol>
+              <li>Ve a <em>Medios → Biblioteca</em> y selecciona una imagen.</li>
+              <li>Rellena el campo <strong>Texto alternativo</strong> con una descripción real.</li>
+              <li>Comprueba el nombre del archivo y el tamaño.</li>
+              <li>Repite con la imagen destacada de cada entrada y con las imágenes de producto.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Buenas y malas prácticas con imágenes</caption>
+                <thead>
+                  <tr><th>Bien</th><th>Mal</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><code>tecnico-reparando-placa-base.webp</code></td><td><code>IMG_2043.jpg</code></td></tr>
+                  <tr><td><code>alt="Técnico revisando el interior de un ordenador de sobremesa"</code></td><td><code>alt="reparación ordenadores Toledo barato"</code></td></tr>
+                  <tr><td>WebP de 1200 px y 180 KB</td><td>JPEG de 4000 px y 4 MB</td></tr>
+                  <tr><td><code>width</code> y <code>height</code> declarados</td><td>Imagen sin dimensiones que provoca CLS</td></tr>
+                  <tr><td><code>loading="lazy"</code> bajo el pliegue</td><td><code>lazy</code> en la imagen principal</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              WordPress genera varios tamaños al subir una imagen y los sirve con <code>srcset</code>. Eso ayuda, pero no
+              sustituye a subir un archivo razonable: si el original pesa 5 MB, el problema ya está ahí.
+            </p>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Ampliación: image sitemap</p>
+              <p>
+                Yoast incluye las imágenes de cada entrada en el sitemap cuando corresponde. No necesitas crear un
+                sitemap de imágenes aparte. Comprueba que las imágenes destacadas tienen <code>alt</code> antes de
+                publicar.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del campo <code>alt</code> en la biblioteca y del código de una imagen publicada.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-12">
+            <h2><span class="num">12</span> Sitemap XML y datos estructurados</h2>
+            <p class="subtitulo">Deja que el plugin genere lo que ya sabe generar y revisa que no se duplique.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Localizar el sitemap de Yoast, comprobar su contenido y validar los datos estructurados del sitio.</p>
+            </div>
+
+            <h3>Sitemap</h3>
+            <ol>
+              <li>Ve a <em>Yoast SEO → Ajustes → Sitemaps</em> y comprueba que están activados.</li>
+              <li>Abre <code>https://tu-dominio/sitemap_index.xml</code>.</li>
+              <li>Revisa los sitemaps de páginas, entradas, categorías y productos.</li>
+              <li>Comprueba que no incluye URL con <code>noindex</code> ni parámetros basura.</li>
+            </ol>
+
+            <div class="codigo" data-lenguaje="XML">
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;sitemap&gt;
+    &lt;loc&gt;https://tu-dominio/page-sitemap.xml&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-15T10:00:00+00:00&lt;/lastmod&gt;
+  &lt;/sitemap&gt;
+  &lt;sitemap&gt;
+    &lt;loc&gt;https://tu-dominio/post-sitemap.xml&lt;/loc&gt;
+  &lt;/sitemap&gt;
+&lt;/sitemapindex&gt;</code></pre>
+            </div>
+
+            <p>
+              No necesitas crear manualmente otro sitemap si Yoast ya está generándolo. Duplicarlo solo crea dos
+              archivos que pueden contradecirse.
+            </p>
+
+            <h3>Datos estructurados</h3>
+            <p>
+              WordPress, el tema y los plugins pueden generar datos estructurados automáticamente: información de la
+              organización, del sitio, de los artículos, migas de pan y, en WooCommerce, del producto. Tu tarea es
+              comprobar que existen, que son correctos y que <strong>no están duplicados</strong> por varios plugins.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué schema revisar</caption>
+                <thead>
+                  <tr><th>Página</th><th>Schema esperado</th><th>Dónde se genera</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Portada</td><td><code>Organization</code> y <code>WebSite</code></td><td>Yoast, con los datos del sitio</td></tr>
+                  <tr><td>Entrada</td><td><code>Article</code> y <code>BreadcrumbList</code></td><td>Yoast</td></tr>
+                  <tr><td>Producto</td><td><code>Product</code> y <code>Offer</code></td><td>WooCommerce y/o Yoast</td></tr>
+                  <tr><td>Reseñas</td><td><code>Review</code> y <code>AggregateRating</code></td><td>WooCommerce, si hay reseñas reales</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <ol>
+              <li>Valida la portada y una entrada con <strong>Rich Results Test</strong>.</li>
+              <li>Valida un producto con el <strong>validador de Schema.org</strong>.</li>
+              <li>Busca dos bloques <code>application/ld+json</code> que describan lo mismo con datos distintos.</li>
+              <li>Si el tema y Yoast generan el mismo schema, desactiva uno.</li>
+            </ol>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">No inventes valoraciones</p>
+              <p>
+                No añadas reseñas, estrellas, direcciones ni teléfonos que no existan. Google lo considera spam de datos
+                estructurados y puede aplicar una acción manual. El schema debe describir lo que el usuario ve en la
+                página.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del <code>sitemap_index.xml</code> y del resultado del validador para una entrada y un producto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-13">
+            <h2><span class="num">13</span> Revisar la velocidad y el rendimiento</h2>
+            <p class="subtitulo">WordPress añade capas: tema, plugins, fuentes y base de datos.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Generar un informe de Lighthouse y localizar las causas reales de lentitud antes de instalar más plugins.</p>
+            </div>
+
+            <ol>
+              <li>Abre la portada en Chrome y pulsa <kbd>F12</kbd>.</li>
+              <li>Ve a la pestaña <em>Lighthouse</em>, selecciona modo móvil y las cuatro categorías.</li>
+              <li>Genera el informe y guarda el PDF.</li>
+              <li>Repite en una entrada y en una ficha de producto.</li>
+              <li>Anota las métricas y los recursos que más pesan.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Problemas habituales y su causa</caption>
+                <thead>
+                  <tr><th>Problema</th><th>Causa frecuente</th><th>Qué revisar</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Imágenes pesadas</td><td>Originales de cámara sin comprimir</td><td>Tamaño, formato y <code>srcset</code></td></tr>
+                  <tr><td>Demasiados plugins</td><td>Funciones que ya hace el tema o el CMS</td><td>Lista de plugins y su coste</td></tr>
+                  <tr><td>Tema con funcionalidades extra</td><td>Constructores y sliders cargados siempre</td><td>CSS y JS encolados</td></tr>
+                  <tr><td>Fuentes externas</td><td>Varias familias y pesos</td><td>Número de archivos y <code>font-display</code></td></tr>
+                  <tr><td>Mal en móvil</td><td>Anchuras fijas y menús pesados</td><td>Viewport y diseño responsive</td></tr>
+                  <tr><td>Servidor local lento</td><td>LocalWP compite con tu equipo</td><td>Medir también en producción</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              En esta práctica no necesitamos instalar un plugin de caché adicional. Primero debemos comprender los
+              problemas que estamos intentando solucionar. Un plugin de caché no arregla una imagen de 4 MB ni un tema
+              que carga tres sliders.
+            </p>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">LocalWP no es representativo</p>
+              <p>
+                Las puntuaciones en local pueden ser peores o mejores que en producción según tu equipo. Úsalas para
+                detectar problemas relativos y, si publicas el sitio, compara con el hosting real antes de sacar
+                conclusiones definitivas.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Informe de Lighthouse de la portada y de un producto, con dos mejoras concretas propuestas.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-14">
+            <h2><span class="num">14</span> WooCommerce: configuración inicial</h2>
+            <p class="subtitulo">Una tienda añade páginas que no deben indexarse y otras que sí.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Instalar WooCommerce, completar el asistente y dejar la tienda con las páginas y los enlaces correctos.</p>
+            </div>
+
+            <ol>
+              <li>Instala y activa <strong>WooCommerce</strong>.</li>
+              <li>Completa el asistente: país, moneda, impuestos y envío (puedes usar valores de ejemplo coherentes).</li>
+              <li>Comprueba que se han creado Tienda, Carrito, Finalizar compra y Mi cuenta.</li>
+              <li>Revisa <em>WooCommerce → Ajustes → Productos → Enlaces permanentes</em>.</li>
+              <li>Configura la tienda para que carrito, checkout y cuenta no se indexen.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué indexar y qué no en una tienda</caption>
+                <thead>
+                  <tr><th>Página</th><th>Indexar</th><th>Motivo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Tienda</td><td>Sí</td><td>Es una página comercial con contenido propio.</td></tr>
+                  <tr><td>Categoría de producto</td><td>Sí, con texto único</td><td>Puede posicionar por consultas de categoría.</td></tr>
+                  <tr><td>Ficha de producto</td><td>Sí</td><td>Es el destino de la intención de compra.</td></tr>
+                  <tr><td>Carrito</td><td>No</td><td>Contenido dinámico y sin valor de búsqueda.</td></tr>
+                  <tr><td>Finalizar compra</td><td>No</td><td>Proceso privado y cambiante.</td></tr>
+                  <tr><td>Mi cuenta</td><td>No</td><td>Requiere sesión y no aporta contenido.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              En <em>WooCommerce → Ajustes → Avanzado</em> puedes revisar las páginas asignadas. Para excluirlas del
+              índice, usa <code>noindex</code> desde Yoast o la configuración de WooCommerce, no un bloqueo en
+              <code>robots.txt</code>.
+            </p>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">El asistente no lo configura todo</p>
+              <p>
+                WooCommerce crea páginas y ajustes básicos, pero no decide tu estrategia de URL, ni escribe descripciones
+                de categoría, ni configura el schema. Eso sigue siendo trabajo tuyo.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de las páginas de WooCommerce y de la configuración de enlaces permanentes de producto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-15">
+            <h2><span class="num">15</span> Optimizar las fichas de producto</h2>
+            <p class="subtitulo">Una ficha es una página de venta y también una página de contenido.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Crear al menos tres productos con título, descripciones, atributos, imágenes, categoría y schema correctos.</p>
+            </div>
+
+            <p>Crea tres productos coherentes con TecnoSerprofes, por ejemplo:</p>
+            <ul>
+              <li>Portátil de 14 pulgadas para estudiar.</li>
+              <li>Ordenador de sobremesa para oficina.</li>
+              <li>Kit de mantenimiento y limpieza de equipos.</li>
+            </ul>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué debe cuidar una ficha de producto</caption>
+                <thead>
+                  <tr><th>Elemento</th><th>Qué hacer</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Título</td><td>Marca, modelo y característica principal. Sin acumular keywords.</td></tr>
+                  <tr><td>Descripción corta</td><td>Resumen de venta y datos clave en pocas líneas.</td></tr>
+                  <tr><td>Descripción larga</td><td>Contenido único: uso, compatibilidad, garantía y detalles técnicos.</td></tr>
+                  <tr><td>Atributos</td><td>Procesador, memoria, almacenamiento, color. Permiten filtrar.</td></tr>
+                  <tr><td>Imágenes</td><td>Varias, con nombre descriptivo, WebP y <code>alt</code> específico.</td></tr>
+                  <tr><td>Categoría</td><td>Una principal; evita duplicar el producto en varias.</td></tr>
+                  <tr><td>Precio y stock</td><td>Reales y actualizados; afectan a <code>Offer</code>.</td></tr>
+                  <tr><td>Schema</td><td><code>Product</code> con <code>Offer</code>; reseñas solo si existen.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              No copies la descripción del fabricante en todos los productos. Si tres fichas comparten el mismo texto,
+              se convierten en contenido duplicado y ninguna aporta valor diferencial.
+            </p>
+
+            <div class="codigo" data-lenguaje="Estructura recomendada">
+<pre><code>H1  Portátil 14" para estudiar
+    Resumen: 16 GB RAM, 512 GB SSD, 1,3 kg
+    H2 Características principales
+    H2 Para quién es
+    H2 Garantía y servicio técnico
+    H2 Preguntas frecuentes
+    Enlaces: categoría Portátiles, servicio de puesta a punto</code></pre>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de una ficha completa y de su panel de Yoast, y validación del schema del producto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-16">
+            <h2><span class="num">16</span> Variaciones de producto y canonical</h2>
+            <p class="subtitulo">Un producto con colores no debería convertirse en diez páginas compitiendo.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Configurar un producto variable y evitar que cada variación genere una URL indexable independiente.</p>
+            </div>
+
+            <p>
+              En WooCommerce, un producto variable permite elegir atributos como color o talla. Las variaciones se
+              seleccionan en la misma ficha y suelen añadir parámetros a la URL, por ejemplo
+              <code>?attribute_pa_color=negro</code>. Eso no debería crear una página nueva para cada combinación.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Cómo tratarlo</caption>
+                <thead>
+                  <tr><th>Situación</th><th>Qué hacer</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Variaciones con parámetros</td><td>Mantener una sola URL de producto y dejar que el selector cambie el precio y el stock.</td></tr>
+                  <tr><td>Variación con URL propia</td><td><code>canonical</code> a la ficha principal.</td></tr>
+                  <tr><td>Variación con contenido muy distinto</td><td>Solo entonces valorar una ficha independiente, con texto propio.</td></tr>
+                  <tr><td>Variación agotada</td><td>Mantener la ficha y avisar; no crear una URL nueva vacía.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">Contenido duplicado y señales dispersas</p>
+              <p>
+                Si cada variación tiene su propia URL indexable con el mismo texto, el buscador recibe varias páginas
+                casi idénticas. Se reparte la autoridad y ninguna destaca. Una ficha principal con todas las opciones
+                suele ser la mejor decisión.
+              </p>
+            </div>
+
+            <div class="caja caja-comprueba">
+              <p class="caja-titulo">Comprueba</p>
+              <ul>
+                <li>El producto variable se muestra en una sola URL principal.</li>
+                <li>Cambiar de color no genera una página distinta en el índice.</li>
+                <li>El schema del producto incluye las variantes como <code>offers</code> cuando corresponde.</li>
+              </ul>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura del producto variable, de sus atributos y de la URL resultante al cambiar de variación.</p>
+            </div>
+          </section>
+          <section class="paso" id="paso-17">
+            <h2><span class="num">17</span> Categorías de producto y filtros</h2>
+            <p class="subtitulo">Los filtros son cómodos para el usuario y peligrosos para el índice si no se controlan.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Escribir categorías con contenido único y decidir qué hacer con las URL que generan los filtros y facetas.</p>
+            </div>
+
+            <h3>Categorías de producto</h3>
+            <p>
+              Una categoría no es solo una lista de productos. Un buen texto descriptivo aporta contexto y contenido
+              único para posicionar la categoría, además de ayudar al usuario a entender qué encontrará.
+            </p>
+
+            <div class="codigo" data-lenguaje="Ejemplo">
+<pre><code>H1  Portátiles para estudiar y trabajar
+    Párrafo: qué tipos hay, para quién son y cómo elegir
+    H2 Portátiles ligeros
+    H2 Portátiles para diseño
+    H2 Preguntas frecuentes
+    Enlaces: guía de compra, servicio de puesta a punto</code></pre>
+            </div>
+
+            <ul>
+              <li>Escribe al menos dos párrafos por categoría principal.</li>
+              <li>No repitas el mismo texto en todas las categorías.</li>
+              <li>Enlaza la categoría con la guía del blog y con los servicios relacionados.</li>
+              <li>Configura título SEO y meta description propios desde Yoast.</li>
+            </ul>
+
+            <h3>Filtros y facetas</h3>
+            <p>
+              Los filtros por atributo, precio o etiqueta pueden generar muchas URL con parámetros y contenido
+              duplicado. Por ejemplo: <code>/portatiles/?filter_marca=lenovo&amp;filter_ram=16gb</code>. Si el buscador
+              rastrea todas las combinaciones, desperdicia crawl budget y encuentra páginas casi idénticas.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Estrategias según el tipo de filtro</caption>
+                <thead>
+                  <tr><th>Filtro</th><th>Recomendación</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Filtros con valor de búsqueda real</td><td>Crear una URL limpia y una landing con contenido propio.</td></tr>
+                  <tr><td>Combinaciones infinitas</td><td><code>noindex</code> o bloqueo de parámetros; canonical a la categoría base.</td></tr>
+                  <tr><td>Ordenación y vista</td><td>No indexar; son variantes de la misma lista.</td></tr>
+                  <tr><td>Filtros de sesión o de usuario</td><td>No indexar y evitar que se enlacen internamente.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">No bloquees CSS ni JavaScript</p>
+              <p>
+                Si usas <code>robots.txt</code> para bloquear filtros, revisa que no bloqueas las carpetas de estilos o
+                scripts. Google necesita renderizar la página para evaluarla. Bloquear recursos críticos empeora la
+                evaluación móvil.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de una categoría con texto propio y de la configuración aplicada a los filtros.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-18">
+            <h2><span class="num">18</span> Reseñas y datos estructurados de producto</h2>
+            <p class="subtitulo">Solo reseñas reales, y solo donde el usuario puede verlas.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Activar reseñas en los productos, moderar el spam y comprobar el schema <code>Product</code> y <code>Review</code>.</p>
+            </div>
+
+            <ol>
+              <li>En <em>WooCommerce → Ajustes → Productos</em>, activa las valoraciones si están desactivadas.</li>
+              <li>Añade una reseña real o de ejemplo claramente identificada en un producto.</li>
+              <li>Comprueba que la reseña aparece visible en la ficha.</li>
+              <li>Valida el producto con Rich Results Test.</li>
+              <li>Revisa que no hay <code>AggregateRating</code> sin reseñas que lo respalden.</li>
+            </ol>
+
+            <div class="tabla">
+              <table>
+                <caption>Qué es aceptable y qué no</caption>
+                <thead>
+                  <tr><th>Aceptable</th><th>No aceptable</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Reseñas de clientes reales, moderadas.</td><td>Reseñas inventadas o compradas.</td></tr>
+                  <tr><td>Mostrar la valoración media solo si hay reseñas.</td><td>Marcar estrellas sin reseñas visibles.</td></tr>
+                  <tr><td>Responder a una reseña negativa con educación.</td><td>Eliminar todas las reseñas negativas.</td></tr>
+                  <tr><td>Schema <code>Product</code> con <code>Offer</code> y reseñas reales.</td><td>Schema en páginas que no son productos.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Permitir reseñas reales y usar los datos estructurados <code>Product</code> y <code>Review</code>
+              correctamente puede mejorar la presentación en resultados, pero no es un atajo para conseguir estrellas.
+              Google puede ignorar o penalizar las valoraciones que no puede verificar.
+            </p>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Moderación</p>
+              <p>
+                Activa la moderación de comentarios y revisa el spam. Una ficha con enlaces no deseados en las reseñas
+                transmite una imagen pésima y puede acabar en contenido de baja calidad.
+              </p>
+            </div>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de una reseña visible y del resultado del validador para el producto.</p>
+            </div>
+          </section>
+
+          <section class="paso" id="paso-19">
+            <h2><span class="num">19</span> Publicar, Search Console y comparar</h2>
+            <p class="subtitulo">Cierra el círculo: comprueba el sitio real y explica qué cambia frente a HTML.</p>
+
+            <div class="caja caja-objetivo">
+              <p class="caja-titulo">Objetivo del paso</p>
+              <p>Revisar la publicación, enviar el sitemap si el sitio es accesible y completar la comparación HTML frente a WordPress.</p>
+            </div>
+
+            <h3>Antes de publicar</h3>
+            <ul>
+              <li>Confirma que <code>noindex</code> y «Desanimar a los motores» están desactivados.</li>
+              <li>Comprueba HTTPS y que <code>http://</code> redirige a <code>https://</code>.</li>
+              <li>Revisa que las URL no contienen <code>?p=</code> ni <code>localhost</code>.</li>
+              <li>Haz una copia de seguridad o exporta el contenido.</li>
+              <li>Prueba el menú, los enlaces internos, el formulario y el proceso de compra.</li>
+            </ul>
+
+            <h3>Si publicas en un hosting accesible</h3>
+            <ol>
+              <li>Verifica la propiedad en <strong>Google Search Console</strong>.</li>
+              <li>Envía <code>sitemap_index.xml</code>.</li>
+              <li>Inspecciona la portada, una entrada y un producto.</li>
+              <li>Consulta el informe de páginas y el de datos estructurados.</li>
+              <li>Solicita la indexación solo de las URL importantes, no de todas.</li>
+            </ol>
+
+            <div class="caja caja-cuidado">
+              <p class="caja-titulo">El error grave tras publicar</p>
+              <p>
+                Que quede activo <code>noindex</code> o el bloqueo de motores. Es la comprobación número uno después de
+                mover una tienda de local a producción. Si el sitio no aparece en Google, revisa esto antes que
+                cualquier otra cosa.
+              </p>
+            </div>
+
+            <h3>Comparación: HTML estático frente a WordPress</h3>
+            <div class="tabla">
+              <table>
+                <caption>Misma tarea SEO, dos formas de hacerla</caption>
+                <thead>
+                  <tr><th>Elemento</th><th>HTML estático</th><th>WordPress</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Título SEO</td><td>Etiqueta <code>title</code></td><td>Campo del plugin SEO</td></tr>
+                  <tr><td>Meta description</td><td>Etiqueta <code>meta</code></td><td>Campo del plugin SEO</td></tr>
+                  <tr><td>Texto ALT</td><td>Código HTML</td><td>Biblioteca multimedia</td></tr>
+                  <tr><td>Sitemap</td><td>Archivo XML manual</td><td>Generado por Yoast</td></tr>
+                  <tr><td>Datos estructurados</td><td>JSON-LD escrito a mano</td><td>Tema o plugin</td></tr>
+                  <tr><td>Enlaces permanentes</td><td>Nombre del archivo o ruta</td><td>Ajustes de WordPress</td></tr>
+                  <tr><td>Contenido</td><td>Archivos HTML</td><td>Páginas y entradas en base de datos</td></tr>
+                  <tr><td>Control técnico</td><td>Total, pero manual</td><td>Limitado por tema y plugins</td></tr>
+                  <tr><td>Mantenimiento</td><td>Edición de archivos</td><td>Actualizaciones y seguridad</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              En HTML controlas cada etiqueta, pero repites trabajo y dependes de tu memoria. En WordPress ganas
+              gestión de contenido y automatización, pero heredas decisiones del tema y de los plugins. Ninguno es
+              mejor en todo: el criterio sigue siendo humano.
+            </p>
+
+            <div class="caja caja-evidencia">
+              <p class="caja-titulo">Evidencia</p>
+              <p>Captura de Search Console (si publicas), del sitemap enviado y de la tabla comparativa completada.</p>
+            </div>
+          </section>
+
+          <section id="checklist">
+            <h2>Checklist de entrega</h2>
+            <p>Marca cada punto cuando esté terminado. El progreso se guarda en este navegador.</p>
+
+            <div class="checklist-panel">
+              <div class="checklist-cabecera">
+                <h3>Antes de entregar</h3>
+                <div class="progreso">
+                  <div class="progreso-barra" role="progressbar" aria-label="Progreso de la checklist" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso-relleno" data-progreso-relleno></div>
+                  </div>
+                  <span class="progreso-texto" data-progreso-texto>0 de 0 · 0%</span>
+                </div>
+              </div>
+
+              <ul class="checklist">
+                <li><label><input type="checkbox" data-check="a3-entorno"> <span>WordPress está instalado con GeneratePress y la estructura de páginas y entradas.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-visibilidad"> <span>La visibilidad del sitio permite la indexación y el HTML no tiene <code>noindex</code>.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-permalinks"> <span>Los enlaces permanentes usan el slug y las URL son legibles.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-yoast"> <span>Yoast SEO está instalado, activo y configurado sin duplicar otro plugin SEO.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-inicio"> <span>La portada tiene frase clave, título SEO, meta description y contenido estructurado.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-paginas"> <span>Servicios y Contacto tienen títulos y descripciones propios.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-entradas"> <span>Las tres entradas tienen metadatos, enlaces internos e imagen destacada.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-taxonomias"> <span>Las categorías aportan organización y las etiquetas finas están controladas.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-autor"> <span>He decidido qué hacer con autor, fecha y paginación.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-duplicados"> <span>He revisado adjuntos, feeds, búsqueda interna y parámetros.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-imagenes"> <span>Las imágenes tienen nombre descriptivo, formato adecuado y <code>alt</code> útil.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-sitemap"> <span>El sitemap XML está activo, es accesible y no incluye URL con <code>noindex</code>.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-schema"> <span>Los datos estructurados están validados y no duplicados.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-rendimiento"> <span>He generado Lighthouse y propuesto dos mejoras concretas.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-woocommerce"> <span>WooCommerce está configurado y carrito, checkout y cuenta no se indexan.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-productos"> <span>Hay al menos tres productos con ficha completa y schema correcto.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-variaciones"> <span>Las variaciones no generan URL duplicadas ni compiten entre sí.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-filtros"> <span>Las categorías tienen texto propio y los filtros están controlados.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-resenas"> <span>Las reseñas son reales, están moderadas y el schema las refleja.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-comparacion"> <span>He completado la comparación entre HTML estático y WordPress.</span></label></li>
+                <li><label><input type="checkbox" data-check="a3-test"> <span>He realizado el test de autoevaluación y revisado los fallos.</span></label></li>
+              </ul>
+
+              <div class="checklist-acciones">
+                <button class="boton boton-suave" type="button" data-reiniciar>Reiniciar checklist</button>
+                <button class="boton boton-suave" type="button" data-imprimir>Imprimir / PDF</button>
+              </div>
+            </div>
+          </section>
+          <section id="trazabilidad">
+            <h2>Trazabilidad con el test</h2>
+            <p>
+              Esta tabla conecta cada pregunta del test de <em>SEO en WordPress y WooCommerce</em> con el paso donde se
+              practica y la evidencia que lo demuestra. Si fallas una pregunta, vuelve al paso indicado.
+            </p>
+
+            <div class="tabla">
+              <table>
+                <caption>Las 20 preguntas del test y su práctica correspondiente</caption>
+                <thead>
+                  <tr><th>Pregunta del test</th><th>Dónde se practica</th><th>Evidencia</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1. Dónde se cambia la estructura de URL</td><td>Paso 3 · Enlaces permanentes</td><td>Captura de <em>Ajustes → Enlaces permanentes</em></td></tr>
+                  <tr><td>2. Qué estructura de enlaces es recomendable</td><td>Paso 3 · Tabla de estructuras</td><td>URL de una entrada publicada</td></tr>
+                  <tr><td>3. Qué hace «Desanimar a los motores de búsqueda»</td><td>Paso 2 · Visibilidad</td><td>Código fuente sin <code>noindex</code></td></tr>
+                  <tr><td>4. Qué funciones cubre Yoast</td><td>Paso 4 · Yoast</td><td>Captura del plugin y sus ajustes</td></tr>
+                  <tr><td>5. Si el título y el lema del sitio sustituyen al SEO de cada página</td><td>Pasos 5 y 6 · Metadatos por página</td><td>Paneles de Yoast de tres páginas</td></tr>
+                  <tr><td>6. Diferencia entre categorías y etiquetas</td><td>Paso 8 · Taxonomías</td><td>Captura de categorías y etiquetas</td></tr>
+                  <tr><td>7. Qué hacer con etiquetas con poco contenido</td><td>Paso 8 · Etiquetas finas</td><td>Configuración de <code>noindex</code> o etiqueta eliminada</td></tr>
+                  <tr><td>8. Por qué se aplica <code>noindex</code> a autor o fecha</td><td>Paso 9 · Archivos automáticos</td><td><code>head</code> de un archivo de autor</td></tr>
+                  <tr><td>9. Cómo tratar la paginación</td><td>Paso 9 · Paginación</td><td>Enlaces entre páginas del blog</td></tr>
+                  <tr><td>10. Fuentes típicas de contenido duplicado</td><td>Paso 10 · Duplicados</td><td>Tabla de duplicados y soluciones</td></tr>
+                  <tr><td>11. Problema de cada variación con URL propia</td><td>Paso 16 · Variaciones</td><td>URL del producto variable</td></tr>
+                  <tr><td>12. Qué debe cuidar la ficha de producto</td><td>Paso 15 · Fichas</td><td>Captura de una ficha completa</td></tr>
+                  <tr><td>13. Buena práctica con imágenes de producto</td><td>Pasos 11 y 15 · Imágenes</td><td>Nombre, formato y <code>alt</code> de una imagen</td></tr>
+                  <tr><td>14. Qué aporta un texto descriptivo en una categoría</td><td>Paso 17 · Categorías</td><td>Captura de la categoría con texto</td></tr>
+                  <tr><td>15. Cómo gestionar las reseñas</td><td>Paso 18 · Reseñas</td><td>Reseña visible y schema validado</td></tr>
+                  <tr><td>16. Qué riesgo tienen filtros y facetas</td><td>Paso 17 · Filtros</td><td>Configuración aplicada a los filtros</td></tr>
+                  <tr><td>17. Qué páginas de la tienda no deben indexarse</td><td>Paso 14 · Páginas de WooCommerce</td><td><code>noindex</code> en carrito, checkout y cuenta</td></tr>
+                  <tr><td>18. Qué mejora el rendimiento de WooCommerce</td><td>Paso 13 · Rendimiento</td><td>Informe de Lighthouse y mejoras</td></tr>
+                  <tr><td>19. Dónde se envía el sitemap</td><td>Paso 19 · Search Console</td><td>Captura del sitemap enviado</td></tr>
+                  <tr><td>20. Qué error grave comprobar tras publicar</td><td>Paso 19 · Publicación</td><td>Código fuente sin <code>noindex</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              <a class="boton" href="../quizzes/quiz-seo-wordpress-woocommerce.html">
+                Abrir el test de WordPress y WooCommerce
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </p>
+          </section>
+
+          <section id="autoevaluacion">
+            <h2>Autoevaluación</h2>
+            <p>Responde antes de desplegar la respuesta. Si fallas, vuelve al paso indicado.</p>
+
+            <div class="autoevaluacion">
+              <details>
+                <summary>¿Por qué no basta con configurar el título y el lema del sitio?</summary>
+                <div class="respuesta">
+                  <p>
+                    Porque el título y el lema son globales, pero cada página compite por una intención distinta. Si
+                    todas comparten el mismo título y la misma descripción, el buscador no puede distinguirlas y baja el
+                    CTR. Cada página necesita su propio title, meta description y contenido. <em>Ver pasos 5 y 6.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Cuándo conviene aplicar <code>noindex</code> a una etiqueta?</summary>
+                <div class="respuesta">
+                  <p>
+                    Cuando el archivo de etiqueta tiene una sola entrada o muy poco contenido y no aporta una navegación
+                    real. En ese caso genera una página fina que compite con el blog. También puedes eliminar la etiqueta
+                    y evitar el problema desde el origen. <em>Ver paso 8.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Se debe poner <code>noindex</code> a las páginas 2, 3… del blog?</summary>
+                <div class="respuesta">
+                  <p>
+                    Normalmente no. Si son el único camino hacia entradas antiguas, deben seguir siendo rastreables. Lo
+                    correcto es que cada página paginada tenga su propio canonical y enlaces claros. El desplazamiento
+                    infinito sin paginación real sí es un problema. <em>Ver paso 9.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>Un producto con diez colores, ¿debe tener diez URL indexables?</summary>
+                <div class="respuesta">
+                  <p>
+                    No. Las variaciones suelen compartir texto, imágenes y estructura, así que diez URL casi idénticas
+                    dispersan señales y generan duplicados. Lo habitual es una ficha principal con selector de variante
+                    y canonical a esa URL. Solo tendría sentido separar si el contenido fuese realmente distinto.
+                    <em>Ver paso 16.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Por qué no se indexan el carrito ni el checkout?</summary>
+                <div class="respuesta">
+                  <p>
+                    Porque son páginas dinámicas, privadas o vacías para un visitante que llega desde Google. No aportan
+                    contenido y pueden mostrar estados distintos en cada sesión. Se marcan con <code>noindex</code>, no
+                    con un bloqueo en <code>robots.txt</code>. <em>Ver paso 14.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>¿Basta con instalar un plugin de caché para arreglar el rendimiento?</summary>
+                <div class="respuesta">
+                  <p>
+                    No. La caché ayuda, pero no reduce una imagen de 4 MB ni elimina un tema que carga sliders y fuentes
+                    innecesarias. Primero hay que identificar el problema con Lighthouse y actuar sobre imágenes, plugins,
+                    tema y recursos críticos. <em>Ver paso 13.</em>
+                  </p>
+                </div>
+              </details>
+
+              <details>
+                <summary>Acabas de publicar la tienda y no aparece en Google. ¿Qué miras primero?</summary>
+                <div class="respuesta">
+                  <p>
+                    Que no quede activo <code>noindex</code> ni la opción «Desanimar a los motores de búsqueda». Es el
+                    error más habitual al pasar de local a producción. Después: HTTPS, URL correctas, sitemap enviado y
+                    estado en Search Console. <em>Ver pasos 2 y 19.</em>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </section>
+
+          <section id="entrega">
+            <h2>Entrega y rúbrica</h2>
+
+            <h3>Qué debes entregar</h3>
+            <ol>
+              <li>Captura del escritorio de WordPress, del tema GeneratePress y del menú principal.</li>
+              <li>Captura de la configuración de visibilidad y de enlaces permanentes.</li>
+              <li>Captura de Yoast SEO instalado y de sus ajustes principales.</li>
+              <li>Captura de la configuración SEO de la portada, de Servicios, de Contacto y de una entrada.</li>
+              <li>Captura de las categorías, de una etiqueta y de la configuración de autor y fecha.</li>
+              <li>Captura de una imagen con su texto alternativo y de una ficha de producto completa.</li>
+              <li>Captura del <code>sitemap_index.xml</code> y del resultado del validador de datos estructurados.</li>
+              <li>Informe de Lighthouse de la portada y de un producto, con dos mejoras concretas.</li>
+              <li>Captura de la tienda con carrito, checkout y cuenta fuera del índice.</li>
+              <li>Tabla comparativa entre HTML estático y WordPress completada y explicada (máximo una página).</li>
+            </ol>
+
+            <div class="tabla rubrica">
+              <table>
+                <caption>Rúbrica de evaluación sobre 100 puntos</caption>
+                <thead>
+                  <tr><th>Bloque</th><th>Qué se valora</th><th>Puntos</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Configuración de WordPress</td><td>Visibilidad, enlaces permanentes, tema, menús y estructura de contenidos.</td><td>15</td></tr>
+                  <tr><td>SEO on page con Yoast</td><td>Títulos y metas únicos, estructura de encabezados, contenido y enlaces internos.</td><td>20</td></tr>
+                  <tr><td>Taxonomías y duplicados</td><td>Categorías útiles, etiquetas finas controladas, autor, fecha, paginación y adjuntos.</td><td>15</td></tr>
+                  <tr><td>WooCommerce</td><td>Fichas completas, variaciones sin duplicar URL, categorías con texto y filtros controlados.</td><td>20</td></tr>
+                  <tr><td>Datos estructurados y reseñas</td><td>Schema válido, sin duplicados y con reseñas reales.</td><td>10</td></tr>
+                  <tr><td>Rendimiento</td><td>Lighthouse interpretado y dos mejoras justificadas.</td><td>10</td></tr>
+                  <tr><td>Publicación y documentación</td><td>Comprobaciones tras publicar, sitemap, GSC y comparación HTML/WordPress.</td><td>10</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Criterio de suficiencia</p>
+              <p>
+                Se considera superada la actividad con 50 puntos o más, siempre que estén aprobados los bloques de SEO
+                on page con Yoast y WooCommerce. Si no hay tienda funcional, la parte de WooCommerce no se puede evaluar.
+              </p>
+            </div>
+
+            <nav class="paginacion" aria-label="Navegación entre actividades">
+              <a href="../actividad-2-seo-avanzado/">
+                <small>Anterior</small>
+                <strong>Actividad 2 · SEO avanzado</strong>
+              </a>
+              <a class="siguiente" href="../index.html">
+                <small>Fin del recorrido</small>
+                <strong>Portada de actividades</strong>
+              </a>
+            </nav>
+          </section>
         </div>
       </div>
     </div>
@@ -67,5 +1505,7 @@
       <p><a href="../index.html">Todas las actividades</a></p>
     </div>
   </footer>
+
+  <script src="../assets/actividades.js"></script>
 </body>
 </html>
