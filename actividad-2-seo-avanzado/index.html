@@ -110,6 +110,7 @@
           <p class="indice-titulo">Contenido</p>
           <ol>
             <li><a href="#antes">Antes de empezar</a></li>
+            <li><a href="#conceptos">Conceptos clave</a></li>
             <li><a href="#paso-1">Auditoría inicial</a></li>
             <li><a href="#paso-2">Clústeres de contenido</a></li>
             <li><a href="#paso-3">Crear el blog</a></li>
@@ -172,9 +173,10 @@
             <div class="caja caja-nota">
               <p class="caja-titulo">Sobre las URL de ejemplo</p>
               <p>
-                Los ejemplos usan <code>https://usuario.github.io/</code>. Sustituye <code>usuario</code> por tu
-                nombre de GitHub. En los datos estructurados y en <code>hreflang</code> las URL deben ser
-                <strong>absolutas</strong>: un error aquí invalida el resultado.
+                Los ejemplos usan <code>https://usuario.github.io/tecno-serprofes/</code>: <code>usuario</code> es tu
+                nombre de GitHub y <code>tecno-serprofes</code> el repositorio del proyecto. Si publicaste en otro
+                repositorio, cambia también esa parte de la URL. En los datos estructurados y en <code>hreflang</code>
+                las URL deben ser <strong>absolutas</strong>: un error aquí invalida el resultado.
               </p>
             </div>
 
@@ -186,6 +188,90 @@
                 manual.
               </p>
             </div>
+          </section>
+
+          <section id="conceptos">
+            <h2>Conceptos clave</h2>
+            <p class="subtitulo">Los términos que aparecen en los pasos y en el test, explicados en una frase.</p>
+            <p>
+              Esta actividad usa vocabulario técnico que no siempre se explica en los tutoriales. Consulta la lista
+              cuando lo necesites; cada definición enlaza al paso donde se aplica.
+            </p>
+
+            <dl class="glosario">
+              <div class="glosario-item">
+                <dt>Clúster de contenido</dt>
+                <dd>Grupo de páginas relacionadas por un mismo tema que se enlazan entre sí para demostrar autoridad. Se organiza alrededor de una página pilar (<a href="#paso-2">paso 2</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Página pilar</dt>
+                <dd>Página principal de un clúster que cubre el tema de forma amplia y enlaza a las páginas satélite (<a href="#paso-2">paso 2</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Página satélite</dt>
+                <dd>Artículo que profundiza en una parte concreta del tema y enlaza de vuelta al pilar. Juntos forman el clúster (<a href="#paso-2">paso 2</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Canibalización</dt>
+                <dd>Dos o más páginas compiten por la misma búsqueda y se restan fuerza. Se corrige consolidando, redirigiendo o diferenciando la intención (<a href="#paso-4">paso 4</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Intención de búsqueda</dt>
+                <dd>Lo que el usuario espera encontrar al escribir una consulta: información, comparación, compra o navegación. El formato de la página debe responder a esa intención.</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Datos estructurados</dt>
+                <dd>Código que describe el contenido en un formato que los buscadores entienden. No cambia lo que ve el usuario, pero mejora la comprensión de la página (<a href="#paso-5">paso 5</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>JSON-LD</dt>
+                <dd>Formato recomendado por Google para escribir datos estructurados dentro de un <code>&lt;script type="application/ld+json"&gt;</code> (<a href="#paso-5">paso 5</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Schema.org</dt>
+                <dd>Vocabulario compartido que define tipos y propiedades para datos estructurados: <code>Organization</code>, <code>Article</code>, <code>Product</code>… (<a href="#paso-5">paso 5</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Rich Results</dt>
+                <dd>Resultados enriquecidos que muestran datos extra en la SERP, como valoraciones o migas de pan. Requieren datos estructurados válidos (<a href="#paso-7">paso 7</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Screaming Frog</dt>
+                <dd>Rastreador de escritorio que analiza un sitio como lo haría un buscador y exporta errores, redirecciones y metadatos (<a href="#paso-1">paso 1</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>LCP</dt>
+                <dd><em>Largest Contentful Paint</em>: tiempo hasta que se pinta el elemento principal de la pantalla. Es una de las métricas de Core Web Vitals (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>CLS</dt>
+                <dd><em>Cumulative Layout Shift</em>: mide los saltos inesperados del diseño mientras carga la página. Se evita reservando espacio para imágenes y anuncios (<a href="#paso-9">paso 9</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>INP</dt>
+                <dd><em>Interaction to Next Paint</em>: tiempo que tarda la página en responder a una interacción. Sustituyó a FID como métrica de respuesta (<a href="#paso-10">paso 10</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>CSR, SSG y SSR</dt>
+                <dd>Formas de generar el HTML: en el navegador (CSR), en el momento del build (SSG) o en el servidor en cada petición (SSR). Condicionan qué ve el rastreador (<a href="#paso-11">paso 11</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt><code>hreflang</code></dt>
+                <dd>Etiqueta que indica a los buscadores qué versión de una página corresponde a cada idioma o región. Debe usar URL absolutas y referencias recíprocas (<a href="#paso-12">paso 12</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Soft 404</dt>
+                <dd>Página que devuelve 200 pero muestra un mensaje de «no encontrado» o contenido vacío. Los buscadores pueden tratarla como error y perder confianza en el sitio (<a href="#paso-13">paso 13</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Crawl budget</dt>
+                <dd>Número de URL que un buscador está dispuesto a rastrear en un sitio durante un periodo. Solo preocupa en sitios grandes o con muchas URL de bajo valor (<a href="#paso-14">paso 14</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>IndexNow</dt>
+                <dd>Protocolo para avisar a buscadores compatibles de que una URL ha cambiado. Google no lo usa: para Google se trabaja con el sitemap y Search Console (<a href="#paso-14">paso 14</a>).</dd>
+              </div>
+            </dl>
           </section>
 
           <section class="paso" id="paso-1">
@@ -345,7 +431,7 @@
             <div class="codigo" data-lenguaje="HTML">
 <pre><code>&lt;title&gt;Cómo elegir un portátil para estudiar | TecnoSerprofes&lt;/title&gt;
 &lt;meta name="description" content="Descubre qué procesador, memoria y almacenamiento necesitas para elegir un portátil adecuado para estudiar o trabajar."&gt;
-&lt;link rel="canonical" href="https://usuario.github.io/blog/elegir-portatil.html"&gt;</code></pre>
+&lt;link rel="canonical" href="https://usuario.github.io/tecno-serprofes/blog/elegir-portatil.html"&gt;</code></pre>
             </div>
 
             <ul>
@@ -397,7 +483,7 @@
             <h3>Cómo detectarla</h3>
             <ul>
               <li>En Search Console, filtra por una consulta y observa si aparecen varias URL para la misma búsqueda.</li>
-              <li>Busca <code>site:usuario.github.io reparación de ordenadores</code> y revisa qué páginas salen.</li>
+              <li>Busca <code>site:usuario.github.io/tecno-serprofes reparación de ordenadores</code> y revisa qué páginas salen.</li>
               <li>Revisa tu mapa de contenidos: si dos páginas tienen la misma keyword principal, hay riesgo.</li>
               <li>En Screaming Frog, cruza las keywords objetivo con títulos y H1 para ver duplicidades.</li>
             </ul>
@@ -468,10 +554,10 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://usuario.github.io/#organizacion",
+      "@id": "https://usuario.github.io/tecno-serprofes/#organizacion",
       "name": "TecnoSerprofes",
-      "url": "https://usuario.github.io/",
-      "logo": "https://usuario.github.io/img/logo.png",
+      "url": "https://usuario.github.io/tecno-serprofes/",
+      "logo": "https://usuario.github.io/tecno-serprofes/img/logo.png",
       "description": "Empresa ficticia de reparación y mantenimiento informático en Toledo.",
       "address": {
         "@type": "PostalAddress",
@@ -481,11 +567,11 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://usuario.github.io/#sitio",
-      "url": "https://usuario.github.io/",
+      "@id": "https://usuario.github.io/tecno-serprofes/#sitio",
+      "url": "https://usuario.github.io/tecno-serprofes/",
       "name": "TecnoSerprofes",
       "inLanguage": "es-ES",
-      "publisher": { "@id": "https://usuario.github.io/#organizacion" }
+      "publisher": { "@id": "https://usuario.github.io/tecno-serprofes/#organizacion" }
     }
   ]
 }
@@ -535,7 +621,7 @@
   "@type": "Article",
   "headline": "Cómo elegir un portátil para estudiar",
   "description": "Qué procesador, memoria y almacenamiento necesitas según el uso.",
-  "image": ["https://usuario.github.io/img/portatil.webp"],
+  "image": ["https://usuario.github.io/tecno-serprofes/img/portatil.webp"],
   "datePublished": "2026-11-15",
   "dateModified": "2026-11-15",
   "author": {
@@ -547,10 +633,10 @@
     "name": "TecnoSerprofes",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://usuario.github.io/img/logo.png"
+      "url": "https://usuario.github.io/tecno-serprofes/img/logo.png"
     }
   },
-  "mainEntityOfPage": "https://usuario.github.io/blog/elegir-portatil.html"
+  "mainEntityOfPage": "https://usuario.github.io/tecno-serprofes/blog/elegir-portatil.html"
 }
 &lt;/script&gt;</code></pre>
             </div>
@@ -575,8 +661,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://usuario.github.io/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://usuario.github.io/blog/" },
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://usuario.github.io/tecno-serprofes/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://usuario.github.io/tecno-serprofes/blog/" },
     { "@type": "ListItem", "position": 3, "name": "Cómo elegir un portátil" }
   ]
 }
@@ -918,10 +1004,10 @@
             </p>
 
             <div class="codigo" data-lenguaje="HTML">
-<pre><code>&lt;link rel="alternate" hreflang="es-ES" href="https://usuario.github.io/"&gt;
-&lt;link rel="alternate" hreflang="es-MX" href="https://usuario.github.io/mx/"&gt;
-&lt;link rel="alternate" hreflang="en" href="https://usuario.github.io/en/"&gt;
-&lt;link rel="alternate" hreflang="x-default" href="https://usuario.github.io/"&gt;</code></pre>
+<pre><code>&lt;link rel="alternate" hreflang="es-ES" href="https://usuario.github.io/tecno-serprofes/"&gt;
+&lt;link rel="alternate" hreflang="es-MX" href="https://usuario.github.io/tecno-serprofes/mx/"&gt;
+&lt;link rel="alternate" hreflang="en" href="https://usuario.github.io/tecno-serprofes/en/"&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://usuario.github.io/tecno-serprofes/"&gt;</code></pre>
             </div>
 
             <div class="tabla">
@@ -1111,9 +1197,9 @@ Bien:  /servicios-antiguos.html  →  /servicios/</code></pre>
             </p>
 
             <ol>
-              <li>Genera una clave y publícala en un archivo de texto en la raíz del sitio: <code>https://usuario.github.io/clave.txt</code>.</li>
-              <li>El contenido del archivo debe ser exactamente la clave.</li>
-              <li>Envía una petición con las URL modificadas:</li>
+              <li>Genera una clave y publícala como archivo de texto en la carpeta del proyecto: <code>https://usuario.github.io/tecno-serprofes/tu-clave-generada.txt</code>.</li>
+              <li>El contenido del archivo debe ser exactamente la clave, sin espacios ni saltos de línea de más.</li>
+              <li>Indica la ubicación completa en <code>keyLocation</code> y envía una petición con las URL modificadas:</li>
             </ol>
 
             <div class="codigo" data-lenguaje="HTTP">
@@ -1123,9 +1209,9 @@ Content-Type: application/json
 {
   "host": "usuario.github.io",
   "key": "tu-clave-generada",
-  "keyLocation": "https://usuario.github.io/tu-clave-generada.txt",
+  "keyLocation": "https://usuario.github.io/tecno-serprofes/tu-clave-generada.txt",
   "urlList": [
-    "https://usuario.github.io/blog/elegir-portatil.html"
+    "https://usuario.github.io/tecno-serprofes/blog/elegir-portatil.html"
   ]
 }</code></pre>
             </div>
@@ -1133,9 +1219,10 @@ Content-Type: application/json
             <div class="caja caja-cuidado">
               <p class="caja-titulo">La clave debe ser accesible</p>
               <p>
-                Si el archivo de clave devuelve 404 o su contenido no coincide, la notificación se rechaza. En un
-                proyecto de GitHub Pages con subcarpeta, recuerda que la raíz del dominio es
-                <code>usuario.github.io</code>, no la carpeta del proyecto.
+                Si el archivo de clave devuelve 404 o su contenido no coincide, la notificación se rechaza. El campo
+                <code>host</code> es siempre <code>usuario.github.io</code>, sin subcarpeta; el nombre del repositorio
+                solo aparece en <code>keyLocation</code> y en las URL de <code>urlList</code>. En un Project Site no
+                puedes publicar la clave en la raíz del host, así que indica su ubicación completa.
               </p>
             </div>
 

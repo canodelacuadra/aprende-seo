@@ -110,6 +110,7 @@
           <p class="indice-titulo">Contenido</p>
           <ol>
             <li><a href="#antes">Antes de empezar</a></li>
+            <li><a href="#conceptos">Conceptos clave</a></li>
             <li><a href="#paso-1">Crear el proyecto</a></li>
             <li><a href="#paso-2">HTML semántico y metadatos</a></li>
             <li><a href="#paso-3">Página de servicios</a></li>
@@ -203,7 +204,7 @@
                   <tr><td>Carpetas</td><td>Minúsculas y en singular</td><td><code>css/</code>, <code>img/</code></td></tr>
                   <tr><td>Imágenes</td><td>Minúsculas, guiones y formato WebP</td><td><code>reparacion-ordenador.webp</code></td></tr>
                   <tr><td>Enlaces internos</td><td>Rutas relativas</td><td><code>servicios.html</code></td></tr>
-                  <tr><td>URL publicada</td><td>Siempre con HTTPS y barra final en la raíz</td><td><code>https://usuario.github.io/</code></td></tr>
+                  <tr><td>URL publicada</td><td>Project Site: HTTPS, nombre del repositorio y barra final</td><td><code>https://usuario.github.io/tecno-serprofes/</code></td></tr>
                 </tbody>
               </table>
             </div>
@@ -216,6 +217,82 @@
                 entregar la práctica impresa, usa <strong>Imprimir / PDF</strong>.
               </p>
             </div>
+          </section>
+
+          <section id="conceptos">
+            <h2>Conceptos clave</h2>
+            <p class="subtitulo">El vocabulario mínimo para entender lo que haces en cada paso.</p>
+            <p>
+              No hace falta memorizar todo antes de empezar: vuelve a esta lista cuando un término te bloquee. Cada
+              definición enlaza al paso donde se aplica.
+            </p>
+
+            <dl class="glosario">
+              <div class="glosario-item">
+                <dt>SEO</dt>
+                <dd>Conjunto de técnicas para mejorar la posición de una web en los resultados orgánicos de los buscadores. Se trabaja en tres frentes: contenido, técnica y enlaces.</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>SERP</dt>
+                <dd>Página de resultados de un buscador (<em>Search Engine Results Page</em>). Es lo que ve el usuario después de escribir una búsqueda.</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Rastreo</dt>
+                <dd>Proceso por el que un robot descubre y descarga las URL de un sitio. Se orienta con <code>robots.txt</code> y con enlaces internos (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Indexación</dt>
+                <dd>Guardar una página en el índice del buscador para poder mostrarla en resultados. Una URL rastreada no está indexada automáticamente.</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>HTML semántico</dt>
+                <dd>Usar etiquetas que describen el significado del contenido (<code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>) en lugar de solo su aspecto. Ayuda a buscadores y lectores de pantalla (<a href="#paso-2">paso 2</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Meta description</dt>
+                <dd>Resumen de una página que los buscadores pueden mostrar bajo el título. No es un factor de posicionamiento directo, pero influye en los clics.</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>URL canónica</dt>
+                <dd>La versión preferida de una página cuando existe más de una dirección con el mismo contenido. Se declara con <code>&lt;link rel="canonical"&gt;</code> (<a href="#paso-7">paso 7</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt><code>robots.txt</code></dt>
+                <dd>Archivo de texto con instrucciones de rastreo para los robots. No impide que una página aparezca en el índice: para eso se usa <code>noindex</code> (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt><code>noindex</code></dt>
+                <dd>Directiva HTML que pide a los buscadores no incluir esa página en sus resultados. Se escribe en el <code>&lt;head&gt;</code> y no sustituye a una redirección (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt><code>sitemap.xml</code></dt>
+                <dd>Archivo XML que enumera las URL importantes del sitio para facilitar su descubrimiento. No garantiza la indexación (<a href="#paso-9">paso 9</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>404 y soft 404</dt>
+                <dd>El 404 es el código HTTP de «no encontrado». Un <em>soft 404</em> devuelve 200 pero muestra un contenido de error o vacío, y confunde a los buscadores (<a href="#paso-10">paso 10</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Redirección 301</dt>
+                <dd>Respuesta que traslada una URL antigua a una nueva de forma permanente y transfiere señales de posicionamiento. Se usa al cambiar una dirección, no para ocultar errores (<a href="#paso-11">paso 11</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Open Graph</dt>
+                <dd>Etiquetas <code>meta</code> que definen cómo se muestra una página al compartirla en redes sociales: título, descripción e imagen (<a href="#paso-12">paso 12</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Search Console</dt>
+                <dd>Herramienta gratuita de Google para verificar la propiedad de un sitio, enviar sitemaps y revisar indexación y problemas técnicos (<a href="#paso-14">paso 14</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Lighthouse y PageSpeed Insights</dt>
+                <dd>Herramientas que auditan rendimiento, accesibilidad y SEO técnico. PageSpeed Insights añade datos reales de usuarios de Chrome (<a href="#paso-15">paso 15</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>User Site y Project Site</dt>
+                <dd>En GitHub Pages, una User Site vive en la raíz (<code>usuario.github.io</code>) y una Project Site en una subcarpeta con el nombre del repositorio. Aquí usamos un Project Site (<a href="#paso-13">paso 13</a>).</dd>
+              </div>
+            </dl>
           </section>
 
           <section class="paso" id="paso-1">
@@ -669,6 +746,12 @@ footer {
               parámetros innecesarios. Comunica el contenido antes de hacer clic y facilita el trabajo de los buscadores.
             </p>
 
+            <p>
+              En este proyecto la URL publicada añade la carpeta del repositorio:
+              <code>https://usuario.github.io/tecno-serprofes/servicios.html</code>. Ese prefijo lo impone GitHub Pages
+              y no depende de ti, pero debe aparecer en todas las URL absolutas que escribas.
+            </p>
+
             <div class="tabla">
               <table>
                 <caption>Comparación de URLs</caption>
@@ -707,20 +790,20 @@ footer {
 
             <h3>Declarar la URL preferida</h3>
             <p>
-              GitHub Pages responde tanto en <code>https://usuario.github.io/</code> como en
-              <code>https://usuario.github.io/index.html</code>. Son la misma página con dos direcciones. La etiqueta
+              GitHub Pages responde tanto en <code>https://usuario.github.io/tecno-serprofes/</code> como en
+              <code>https://usuario.github.io/tecno-serprofes/index.html</code>. Son la misma página con dos direcciones. La etiqueta
               <code>canonical</code> indica cuál debe considerarse principal cuando hay contenido duplicado.
             </p>
 
             <div class="codigo" data-lenguaje="HTML">
 <pre><code>&lt;!-- En la portada --&gt;
-&lt;link rel="canonical" href="https://usuario.github.io/"&gt;
+&lt;link rel="canonical" href="https://usuario.github.io/tecno-serprofes/"&gt;
 
 &lt;!-- En servicios.html --&gt;
-&lt;link rel="canonical" href="https://usuario.github.io/servicios.html"&gt;
+&lt;link rel="canonical" href="https://usuario.github.io/tecno-serprofes/servicios.html"&gt;
 
 &lt;!-- En contacto.html --&gt;
-&lt;link rel="canonical" href="https://usuario.github.io/contacto.html"&gt;</code></pre>
+&lt;link rel="canonical" href="https://usuario.github.io/tecno-serprofes/contacto.html"&gt;</code></pre>
             </div>
 
             <ul>
@@ -743,7 +826,7 @@ footer {
               <p class="caja-titulo">Comprueba</p>
               <ul>
                 <li>Las tres páginas tienen un <code>canonical</code> distinto y absoluto.</li>
-                <li>Abre <code>https://usuario.github.io/index.html</code>: debe seguir funcionando, pero el canonical apunta a la raíz.</li>
+                <li>Abre <code>https://usuario.github.io/tecno-serprofes/index.html</code>: debe seguir funcionando, pero el canonical apunta a la versión sin <code>index.html</code>.</li>
                 <li>En DevTools → <em>Elements</em>, el canonical está dentro de <code>&lt;head&gt;</code>.</li>
               </ul>
             </div>
@@ -769,7 +852,22 @@ footer {
 <pre><code>User-agent: *
 Allow: /
 
-Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
+Sitemap: https://usuario.github.io/tecno-serprofes/sitemap.xml</code></pre>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Un robots.txt en un Project Site</p>
+              <p>
+                GitHub Pages publica el archivo en <code>https://usuario.github.io/tecno-serprofes/robots.txt</code>,
+                pero Google solo lee el <code>robots.txt</code> de la <strong>raíz del host</strong>
+                (<code>https://usuario.github.io/robots.txt</code>). En un Project Site este archivo no controla el
+                rastreo de Google: sirve para aprender el formato y para otros rastreadores que sí lo lean en la
+                subcarpeta.
+              </p>
+              <p>
+                Si en este escenario necesitas sacar una página del índice, usa <code>noindex</code> en su HTML. El
+                <code>robots.txt</code> de la raíz solo está a tu alcance con una User Site.
+              </p>
             </div>
 
             <div class="tabla">
@@ -793,7 +891,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
 Disallow: /borradores/
 Disallow: /admin/
 
-Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
+Sitemap: https://usuario.github.io/tecno-serprofes/sitemap.xml</code></pre>
             </div>
 
             <div class="caja caja-cuidado">
@@ -818,7 +916,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
                   <tr><th>Aspecto</th><th><code>noindex</code></th><th><code>robots.txt</code></th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Dónde se declara</td><td>En el <code>&lt;head&gt;</code> de la página</td><td>En un archivo de la raíz</td></tr>
+                  <tr><td>Dónde se declara</td><td>En el <code>&lt;head&gt;</code> de la página</td><td>En un archivo de la raíz del host</td></tr>
                   <tr><td>Qué controla</td><td>La indexación</td><td>El rastreo</td></tr>
                   <tr><td>Efecto sobre la URL</td><td>Puede seguir apareciendo si está enlazada, pero sin contenido indexado</td><td>El bot no visita la ruta</td></tr>
                   <tr><td>Uso típico</td><td>Páginas de agradecimiento, filtros, contenido duplicado</td><td>Áreas privadas, carpetas de desarrollo</td></tr>
@@ -829,7 +927,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <div class="caja caja-comprueba">
               <p class="caja-titulo">Comprueba</p>
               <ul>
-                <li><code>https://usuario.github.io/robots.txt</code> muestra el contenido en texto plano.</li>
+                <li><code>https://usuario.github.io/tecno-serprofes/robots.txt</code> muestra el contenido en texto plano.</li>
                 <li>No hay líneas vacías entre directivas del mismo grupo.</li>
                 <li>La URL del <code>Sitemap</code> es absoluta y con <code>https</code>.</li>
               </ul>
@@ -854,15 +952,15 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
 <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
   &lt;url&gt;
-    &lt;loc&gt;https://usuario.github.io/&lt;/loc&gt;
+    &lt;loc&gt;https://usuario.github.io/tecno-serprofes/&lt;/loc&gt;
     &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
   &lt;/url&gt;
   &lt;url&gt;
-    &lt;loc&gt;https://usuario.github.io/servicios.html&lt;/loc&gt;
+    &lt;loc&gt;https://usuario.github.io/tecno-serprofes/servicios.html&lt;/loc&gt;
     &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
   &lt;/url&gt;
   &lt;url&gt;
-    &lt;loc&gt;https://usuario.github.io/contacto.html&lt;/loc&gt;
+    &lt;loc&gt;https://usuario.github.io/tecno-serprofes/contacto.html&lt;/loc&gt;
     &lt;lastmod&gt;2026-11-13&lt;/lastmod&gt;
   &lt;/url&gt;
 &lt;/urlset&gt;</code></pre>
@@ -888,7 +986,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <div class="caja caja-comprueba">
               <p class="caja-titulo">Comprueba</p>
               <ol>
-                <li>Abre <code>https://usuario.github.io/sitemap.xml</code> y revisa que el navegador no muestra errores de XML.</li>
+                <li>Abre <code>https://usuario.github.io/tecno-serprofes/sitemap.xml</code> y revisa que el navegador no muestra errores de XML.</li>
                 <li>Comprueba que cada <code>&lt;loc&gt;</code> responde con un 200.</li>
                 <li>Valida el archivo con el validador de sitemaps o con Search Console.</li>
               </ol>
@@ -942,7 +1040,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <div class="caja caja-comprueba">
               <p class="caja-titulo">Comprueba</p>
               <ol>
-                <li>Abre una URL inexistente, por ejemplo <code>https://usuario.github.io/no-existe</code>.</li>
+                <li>Abre una URL inexistente, por ejemplo <code>https://usuario.github.io/tecno-serprofes/no-existe</code>.</li>
                 <li>En DevTools → <em>Network</em>, el documento debe mostrar <strong>404</strong>.</li>
                 <li>La página se ve con el diseño del sitio y tiene enlaces útiles.</li>
               </ol>
@@ -1018,7 +1116,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <div class="caja caja-comprueba">
               <p class="caja-titulo">Comprueba</p>
               <ul>
-                <li><code>http://usuario.github.io/</code> termina en <code>https://</code>.</li>
+                <li><code>http://usuario.github.io/tecno-serprofes/</code> termina en <code>https://</code>.</li>
                 <li>El candado aparece en la barra del navegador.</li>
                 <li>Sabes explicar la diferencia entre 301, 302 y 404 con un ejemplo propio.</li>
               </ul>
@@ -1047,8 +1145,8 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
 <pre><code>&lt;meta property="og:title" content="Reparación de ordenadores en Toledo | TecnoSerprofes"&gt;
 &lt;meta property="og:description" content="Servicio técnico y mantenimiento informático para particulares y empresas en Toledo."&gt;
 &lt;meta property="og:type" content="website"&gt;
-&lt;meta property="og:url" content="https://usuario.github.io/"&gt;
-&lt;meta property="og:image" content="https://usuario.github.io/img/reparacion-ordenador.webp"&gt;
+&lt;meta property="og:url" content="https://usuario.github.io/tecno-serprofes/"&gt;
+&lt;meta property="og:image" content="https://usuario.github.io/tecno-serprofes/img/reparacion-ordenador.webp"&gt;
 &lt;meta property="og:locale" content="es_ES"&gt;</code></pre>
             </div>
 
@@ -1092,7 +1190,7 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
 
             <ol>
               <li>Entra en GitHub y pulsa <em>New repository</em>.</li>
-              <li>Llama al repositorio <code>usuario.github.io</code>, sustituyendo <code>usuario</code> por tu nombre de GitHub.</li>
+              <li>Llama al repositorio <code>tecno-serprofes</code>, igual que la carpeta del proyecto.</li>
               <li>Marca el repositorio como <strong>Public</strong> y créalo.</li>
               <li>Sube <code>index.html</code>, <code>servicios.html</code>, <code>contacto.html</code>, <code>404.html</code>, <code>robots.txt</code>, <code>sitemap.xml</code> y las carpetas <code>css/</code> e <code>img/</code>.</li>
               <li>Ve a <em>Settings</em> → <em>Pages</em>.</li>
@@ -1101,9 +1199,33 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             </ol>
 
             <p>
-              Al llamar al repositorio <code>usuario.github.io</code> obtienes una <em>User Site</em> publicada
-              directamente en <code>https://usuario.github.io/</code>, sin subcarpeta.
+              Al publicar un repositorio normal, GitHub Pages crea un <strong>Project Site</strong>: la web queda en
+              <code>https://usuario.github.io/tecno-serprofes/</code>, con el nombre del repositorio como subcarpeta.
+              Esa subcarpeta forma parte de la URL y debe aparecer en todos los enlaces absolutos, en el
+              <code>canonical</code>, en <code>sitemap.xml</code>, en Open Graph y en los datos estructurados.
             </p>
+
+            <div class="tabla">
+              <table>
+                <caption>User Site frente a Project Site</caption>
+                <thead>
+                  <tr><th>Tipo</th><th>Nombre del repositorio</th><th>URL publicada</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>User Site</td><td><code>usuario.github.io</code></td><td><code>https://usuario.github.io/</code></td></tr>
+                  <tr><td>Project Site</td><td>Cualquier otro nombre, como <code>tecno-serprofes</code></td><td><code>https://usuario.github.io/tecno-serprofes/</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Por qué usamos un Project Site</p>
+              <p>
+                Una cuenta solo puede tener un repositorio <code>usuario.github.io</code>, y ese repositorio publica
+                en la raíz del dominio. El Project Site permite tener varias prácticas publicadas a la vez y se
+                parece más a publicar en una subcarpeta real. El precio es que la subcarpeta viaja en todas las URL.
+              </p>
+            </div>
 
             <div class="caja caja-cuidado">
               <p class="caja-titulo">Rutas que se rompen al publicar</p>
@@ -1117,10 +1239,10 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <div class="caja caja-comprueba">
               <p class="caja-titulo">Comprueba</p>
               <ul>
-                <li><code>https://usuario.github.io/</code> carga la portada.</li>
+                <li><code>https://usuario.github.io/tecno-serprofes/</code> carga la portada.</li>
                 <li>Los enlaces a servicios y contacto funcionan.</li>
                 <li>La imagen y los estilos se cargan (mira la pestaña Network: no debe haber 404).</li>
-                <li><code>/robots.txt</code> y <code>/sitemap.xml</code> se muestran.</li>
+                <li><code>https://usuario.github.io/tecno-serprofes/robots.txt</code> y <code>https://usuario.github.io/tecno-serprofes/sitemap.xml</code> se muestran.</li>
               </ul>
             </div>
 
@@ -1150,13 +1272,23 @@ Sitemap: https://usuario.github.io/sitemap.xml</code></pre>
             <ol>
               <li>Entra en <code>https://search.google.com/search-console/</code> con tu cuenta de Google.</li>
               <li>Pulsa <em>Añadir propiedad</em> y elige <em>Prefijo de URL</em>.</li>
-              <li>Introduce la dirección completa publicada, con <code>https://</code> y barra final: <code>https://usuario.github.io/</code>.</li>
+              <li>Introduce la dirección completa publicada, con <code>https://</code> y barra final: <code>https://usuario.github.io/tecno-serprofes/</code>.</li>
               <li>Elige el método de verificación <em>Etiqueta HTML</em>.</li>
               <li>Copia la etiqueta que te da Google y pégala dentro del <code>&lt;head&gt;</code> de <code>index.html</code>.</li>
               <li>Sube el cambio a GitHub, espera a que se publique y pulsa <em>Verificar</em>.</li>
               <li>Entra en <em>Sitemaps</em>, escribe <code>sitemap.xml</code> y pulsa <em>Enviar</em>.</li>
               <li>Usa <em>Inspección de URLs</em> con la portada y, si aún no está indexada, pulsa <em>Solicitar indexación</em>.</li>
             </ol>
+
+            <div class="caja caja-nota">
+              <p class="caja-titulo">Propiedad de prefijo de URL</p>
+              <p>
+                Como el sitio vive en una subcarpeta, la propiedad correcta es de tipo <em>Prefijo de URL</em> y debe
+                incluir <code>/tecno-serprofes/</code>. Una propiedad de dominio cubriría todas las rutas y
+                subdominios, pero exige verificar el DNS, y el DNS de <code>github.io</code> no está en tus manos. Si
+                publicaras una User Site, el prefijo sería <code>https://usuario.github.io/</code>.
+              </p>
+            </div>
 
             <div class="codigo" data-lenguaje="HTML">
 <pre><code>&lt;meta name="google-site-verification" content="CODIGO_PROPORCIONADO_POR_GOOGLE"&gt;</code></pre>

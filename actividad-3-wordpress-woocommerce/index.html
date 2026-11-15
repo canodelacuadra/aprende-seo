@@ -110,6 +110,7 @@
           <p class="indice-titulo">Contenido</p>
           <ol>
             <li><a href="#antes">Antes de empezar</a></li>
+            <li><a href="#conceptos">Conceptos clave</a></li>
             <li><a href="#paso-1">Preparar WordPress</a></li>
             <li><a href="#paso-2">Visibilidad e indexación</a></li>
             <li><a href="#paso-3">Enlaces permanentes</a></li>
@@ -193,6 +194,98 @@
                 Yoast SEO y WooCommerce. Si añades otro, debes poder justificar qué problema resuelve y qué coste tiene.
               </p>
             </div>
+          </section>
+
+          <section id="conceptos">
+            <h2>Conceptos clave</h2>
+            <p class="subtitulo">WordPress tiene su propio vocabulario. Este es el que necesitas para no perderte.</p>
+            <p>
+              Muchos términos se parecen a los de las actividades anteriores, pero aquí cambia quién hace el trabajo:
+              el CMS, el tema, el plugin o tú. Cada definición enlaza al paso donde se aplica.
+            </p>
+
+            <dl class="glosario">
+              <div class="glosario-item">
+                <dt>CMS</dt>
+                <dd>Sistema de gestión de contenidos: permite publicar y organizar contenido sin escribir HTML a mano. WordPress es el CMS que usamos (<a href="#paso-1">paso 1</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Tema</dt>
+                <dd>Capa visual y de plantillas del CMS. Decide la estructura HTML que se genera y qué se puede cambiar sin tocar código (<a href="#paso-1">paso 1</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Plugin</dt>
+                <dd>Extensión que añade funciones al CMS. Cada plugin puede cargar CSS y JavaScript, así que conviene instalar solo los necesarios (<a href="#paso-4">paso 4</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Yoast SEO</dt>
+                <dd>Plugin que gestiona títulos, metadatos, sitemap y análisis on page. Ayuda, pero no sustituye al criterio ni garantiza posiciones (<a href="#paso-4">paso 4</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Enlace permanente</dt>
+                <dd>Estructura de URL que WordPress aplica a entradas y páginas. Se configura una vez y conviene no cambiarla después (<a href="#paso-3">paso 3</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Slug</dt>
+                <dd>Parte final de la URL que identifica un contenido concreto. Debe ser corto, en minúsculas, sin tildes y con guiones (<a href="#paso-3">paso 3</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Taxonomía</dt>
+                <dd>Sistema de clasificación de contenidos. En WordPress las principales son las categorías y las etiquetas (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Categoría</dt>
+                <dd>Agrupación amplia y estable del blog. Debe tener contenido propio y no solaparse con otras categorías (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Etiqueta</dt>
+                <dd>Clasificación libre y transversal. En exceso genera archivos con poco contenido y duplicados (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Contenido fino</dt>
+                <dd>Páginas con poco valor que no responden a una intención clara. Los archivos de etiquetas y las paginaciones vacías son el caso típico (<a href="#paso-8">paso 8</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Autor y fecha</dt>
+                <dd>Datos que contextualizan una entrada y aportan confianza. Deben ser visibles y coherentes con los datos estructurados (<a href="#paso-9">paso 9</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Paginación</dt>
+                <dd>División de un listado en varias URL. Debe poder rastrearse y no competir con el contenido principal (<a href="#paso-9">paso 9</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Contenido duplicado</dt>
+                <dd>El mismo contenido accesible desde varias URL. Se corrige con <code>canonical</code>, redirección o <code>noindex</code>, según el caso (<a href="#paso-10">paso 10</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>WooCommerce</dt>
+                <dd>Plugin de comercio electrónico para WordPress. Añade productos, carrito, pedidos y sus propias plantillas (<a href="#paso-14">paso 14</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Producto variable</dt>
+                <dd>Producto con varias versiones, por ejemplo por talla o color. Cada variación puede tener precio y stock propios (<a href="#paso-16">paso 16</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Atributo y variación</dt>
+                <dd>El atributo es la característica (color) y la variación es el valor concreto (azul). Juntos definen las opciones de un producto variable (<a href="#paso-16">paso 16</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Faceta</dt>
+                <dd>Filtro de una tienda que combina atributos y genera nuevas URL. Sin control multiplica páginas de bajo valor (<a href="#paso-17">paso 17</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>Product, Offer y Review</dt>
+                <dd>Tipos de schema para una ficha de producto: el producto, su oferta de precio y sus reseñas (<a href="#paso-18">paso 18</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>AggregateRating</dt>
+                <dd>Propiedad de schema que resume la media de valoraciones. Requiere reseñas visibles y reales en la página (<a href="#paso-18">paso 18</a>).</dd>
+              </div>
+              <div class="glosario-item">
+                <dt>LocalWP</dt>
+                <dd>Aplicación que crea un WordPress local sin configurar un servidor. Sirve para practicar sin publicar (<a href="#paso-1">paso 1</a>).</dd>
+              </div>
+            </dl>
           </section>
 
           <section class="paso" id="paso-1">

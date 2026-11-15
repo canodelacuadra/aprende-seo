@@ -51,7 +51,7 @@ Si cambias de repositorio o de usuario, actualiza también:
 - `robots.txt` (línea `Sitemap`).
 - `sitemap.xml` (todas las etiquetas `<loc>`).
 
-Los ejemplos de `canonical` y Open Graph de la actividad 1 usan `usuario.github.io` de forma intencionada: son plantillas para el alumnado, no la URL de este material.
+Los ejemplos de `canonical` y Open Graph de las actividades 1 y 2 usan `https://usuario.github.io/tecno-serprofes/` de forma intencionada: son plantillas para el alumnado, no la URL de este material. El primer segmento es el nombre de usuario de GitHub y el segundo, el repositorio del proyecto; ambos deben cambiarse si el alumnado publica en otro sitio.
 
 ## Funcionalidades
 

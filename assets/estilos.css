@@ -913,6 +913,51 @@ pre code {
 }
 
 /* --------------------------------------------------------------------------
+   Glosario de conceptos
+   -------------------------------------------------------------------------- */
+
+.glosario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: .7rem;
+  margin: 1.2rem 0 1.5rem;
+  padding: 0;
+}
+
+.glosario-item {
+  padding: .8rem .95rem;
+  border: 1px solid var(--s200);
+  border-left: 3px solid var(--e500);
+  border-radius: .6rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
+}
+
+.glosario dt {
+  margin: 0 0 .2rem;
+  font-size: .95rem;
+  font-weight: 800;
+  color: var(--e800);
+  line-height: 1.35;
+}
+
+.glosario dd {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.55;
+  color: var(--s700);
+}
+
+.glosario dd code {
+  font-size: .85em;
+}
+
+.glosario dd a {
+  color: var(--e700);
+  text-underline-offset: .15em;
+}
+
+/* --------------------------------------------------------------------------
    Checklist y progreso
    -------------------------------------------------------------------------- */
 
@@ -1759,6 +1804,17 @@ pre code {
   .tabla th,
   .tabla td {
     border-color: #ccc;
+  }
+
+  .glosario {
+    display: block;
+  }
+
+  .glosario-item {
+    margin-bottom: .4rem;
+    border-color: #ccc;
+    box-shadow: none;
+    break-inside: avoid;
   }
 
   a {
